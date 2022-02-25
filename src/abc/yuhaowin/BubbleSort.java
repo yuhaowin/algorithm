@@ -1,4 +1,4 @@
-package ayuhaowin;
+package abc.yuhaowin;
 
 /**
  * @author yuhao

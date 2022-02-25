@@ -1,4 +1,4 @@
-package ayuhaowin.dp;
+package abc.yuhaowin.dp;
 
 /**
  * 给定一个整型数组arr，代表数值不同的纸牌排成一条线
