@@ -1,32 +1,25 @@
-package ayuhaowin;
+package abc.yuhaowin;
 
 /**
  * @author yuhao
  * @version 5.11.0
- * @date 2021年07月26日 23:53:00
+ * @date 2021年07月27日 21:35:00
  */
-public class SelectionSort {
+public class ClassicInsertionSort {
 
-    /**
-     * https://leetcode.com/problems/sort-an-array/
-     * time limit exceeded
-     *
-     * @param nums
-     * @return
-     */
     public int[] sortArray(int[] nums) {
         if (nums == null || nums.length < 2) {
             return nums;
         }
         int N = nums.length;
         for (int i = 0; i < N; i++) {
-            int minimumIndex = i;
-            for (int j = i + 1; j < N; j++) {
-                if (nums[minimumIndex] > nums[j]) {
-                    minimumIndex = j;
+            for (int j = i - 1; j >= 0; j--) {
+                if (nums[j] > nums[j + 1]) {
+                    swap(nums, j, j + 1);
+                } else {
+                    break;
                 }
             }
-            swap(nums, minimumIndex, i);
         }
         return nums;
     }
