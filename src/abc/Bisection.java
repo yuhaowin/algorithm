@@ -44,7 +44,7 @@ public class Bisection {
         int[] source = {0,1,2,3,4,5,6};
 
         print(source);
-        com.yuhaowin.Sort.insertSort(source);
+        Sort.insertSort(source);
         print(source);
 
         System.out.println(bisect(source,2));
