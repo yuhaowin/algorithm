@@ -1,4 +1,4 @@
-package abc.yuhaowin.dp;
+package class18.yuhao_dp;
 
 /**
  * 假设有排成一行的N个位置，记为1~N，N一定大于或等于2
