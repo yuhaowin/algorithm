@@ -1,4 +1,4 @@
-package abc.yuhaowin.dp;
+package class19.yuhao_dp;
 
 /**
  * 01背包问题（01 knapsack problem）：
@@ -12,8 +12,9 @@ public class KnapsackProblem {
     int[] value = {14, 11, 7};
     int bagSize = 12;
     KnapsackProblem knapsackProblem = new KnapsackProblem();
+
+    // 暴力递归
     System.out.println(knapsackProblem.process(0, bagSize, weight, value));
-    System.out.println(knapsackProblem.f(3, bagSize, weight, value));
 
     int[][] cache = new int[weight.length + 1][bagSize + 1];
     for (int i = 0; i < weight.length + 1; i++) {
@@ -21,8 +22,16 @@ public class KnapsackProblem {
         cache[i][j] = -1;
       }
     }
+
+    // 缓存版本
     System.out.println(knapsackProblem.process1(0, bagSize, weight, value, cache));
-    knapsackProblem.testweightbagproblem(weight,value,bagSize);
+
+    // dp 版本
+    System.out.println(knapsackProblem.process2(bagSize, weight, value));
+
+    // 网友提供
+    System.out.println(knapsackProblem.f(3, bagSize, weight, value));
+    knapsackProblem.testweightbagproblem(weight, value, bagSize);
   }
 
   private int process(int cur, int restWeight, int[] weight, int[] value) {
@@ -73,25 +82,32 @@ public class KnapsackProblem {
 
   //--------------------------------------------------------
 
-
   private int process2(int restWeight, int[] weight, int[] value) {
-    int[][] cache = new int[weight.length + 1][restWeight + 1];
-
-    for (int i = 0; i <= weight.length; i++) {
-
-      for (int j = 0; j <= restWeight; j++) {
-        if (weight[i] > restWeight) {
-          cache[i][restWeight] = cache[i + 1][restWeight];
+    int[][] dp = new int[weight.length + 1][restWeight + 1];
+    int N = weight.length;
+    int bag = restWeight;
+    for (int index = N - 1; index >= 0; index--) {
+      for (int rest = 0; rest <= bag; rest++) {
+        if (weight[index] > rest) {
+          dp[index][rest] = dp[index + 1][rest];
         } else {
-          int p1 = cache[i + 1][restWeight];
-          int p2 = cache[i + 1][restWeight - weight[i]] + value[i];
-          cache[i][restWeight] = Math.max(p1, p2);
+          int p1 = dp[index + 1][rest];
+          int p2 = dp[index + 1][rest - weight[index]] + value[index];
+          dp[index][rest] = Math.max(p1, p2);
         }
       }
-
     }
-    return 1;
+    //打印dp数组
+    for (int i = 0; i <= weight.length; i++) {
+      for (int j = 0; j <= restWeight; j++) {
+        System.out.print(dp[i][j] + " ");
+      }
+      System.out.print("\n");
+    }
+    return dp[0][restWeight];
   }
+
+  //--------------------------------------------------------
 
   public void testweightbagproblem(int[] weight, int[] value, int bagsize) {
     int wlen = weight.length, value0 = 0;
@@ -118,6 +134,8 @@ public class KnapsackProblem {
       }
       System.out.print("\n");
     }
+
+    System.out.println(dp[wlen][bagsize]);
   }
 
 
