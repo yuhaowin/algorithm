@@ -51,6 +51,19 @@ public class RobotWalk {
     return process(cur - 1, rest - 1, aim, N) + process(cur + 1, rest - 1, aim, N);
   }
 
+  // 另外一种处理边界的方案
+  private int process0(int cur, int rest, int aim, int N) {
+    if (rest == 0) {
+      return cur == aim ? 1 : 0;
+    }
+    // rest > 0
+    if (cur < 1 || cur > N) {
+      return 0;
+    }
+    int p1 = process0(cur - 1, rest - 1, aim, N);
+    int p2 = process0(cur + 1, rest - 1, aim, N);
+    return p1 + p2;
+  }
   //------------------------------------------------------------------------------------------------
 
 
