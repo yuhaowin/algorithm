@@ -49,8 +49,11 @@ import java.util.Map;
  */
 public class Q3LongestSubstringWithoutRepeatingCharacters {
     public static void main(String[] args) {
+        String test = "abcabcbb";
+        Q3LongestSubstringWithoutRepeatingCharacters q3 = new Q3LongestSubstringWithoutRepeatingCharacters();
         Solution solution = new Q3LongestSubstringWithoutRepeatingCharacters().new Solution();
-        System.out.println(solution.lengthOfLongestSubstring("pwwkew"));
+        System.out.println(solution.lengthOfLongestSubstring(test));
+        System.out.println(q3.lengthOfLongestSubstring(test));
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)
@@ -78,4 +81,22 @@ public class Q3LongestSubstringWithoutRepeatingCharacters {
         }
     }
     //leetcode submit region end(Prohibit modification and deletion)
+
+    public int lengthOfLongestSubstring(String s) {
+        char[] chars = s.toCharArray();
+        int[] map = new int[256];
+        for (int i = 0; i < map.length; i++) {
+            map[i] = -1;
+        }
+        int preIndex = 0;
+        int result = 0;
+        for (int index = 0; index < chars.length; index++) {
+            int lastIndex = map[chars[index]];
+            preIndex = Math.max(preIndex, lastIndex + 1);
+            int currentLength = index - preIndex + 1;
+            result = Math.max(result, currentLength);
+            map[chars[index]] = index;
+        }
+        return result;
+    }
 }
