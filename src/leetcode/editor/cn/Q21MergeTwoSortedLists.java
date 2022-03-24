@@ -36,6 +36,9 @@
 
 package leetcode.editor.cn;
 
+import java.util.Comparator;
+import java.util.PriorityQueue;
+
 public class Q21MergeTwoSortedLists {
     public static void main(String[] args) {
         Solution solution = new Q21MergeTwoSortedLists().new Solution();
@@ -78,6 +81,28 @@ public class Q21MergeTwoSortedLists {
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
+
+    public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
+        if (list1 == null || list2 == null) {
+            return list1 == null ? list2 : list1;
+        }
+        ListNode prehead = new ListNode(-1);
+        ListNode result = prehead;
+
+        PriorityQueue<ListNode> heap = new PriorityQueue<>(Comparator.comparingInt(o -> o.val));
+        heap.add(list1);
+        heap.add(list2);
+
+        while (!heap.isEmpty()) {
+            ListNode node = heap.poll();
+            result.next = node;
+            result = result.next;
+            if (node.next != null) {
+                heap.add(node.next);
+            }
+        }
+        return prehead.next;
+    }
 
     static class ListNode {
         int val;
