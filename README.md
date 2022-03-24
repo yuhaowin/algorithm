@@ -15,7 +15,8 @@
 
 + [ ] 进阶 49-78 节 leetcode
     + [x] 49 leetcode 高频题目全讲（一）
-    + [ ] 50 leetcode 高频题目全讲（二）
+    + [x] 50 leetcode 高频题目全讲（二）
+    + [ ] 50 leetcode 高频题目全讲（三）
 
 + [ ] 进阶 17 -48
 
