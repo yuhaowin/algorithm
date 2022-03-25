@@ -17,23 +17,23 @@ public class MinPathSum {
   }
 
   public int process(int[][] arr) {
-    return test(arr, 0, 0);
+    return recursive(arr, 0, 0);
   }
 
-  public int test(int[][] arr, int x, int y) {
+  public int recursive(int[][] arr, int x, int y) {
     int row = arr.length - 1;
     int column = arr[0].length - 1;
     if (x == row && y == column) {
       return arr[x][y];
     }
     if (x == row) {
-      return arr[x][y] + test(arr, x, y + 1);
+      return arr[x][y] + recursive(arr, x, y + 1);
     }
     if (y == column) {
-      return arr[x][y] + test(arr, x + 1, y);
+      return arr[x][y] + recursive(arr, x + 1, y);
     }
-    int p1 = test(arr, x, y + 1);
-    int p2 = test(arr, x + 1, y);
+    int p1 = recursive(arr, x, y + 1);
+    int p2 = recursive(arr, x + 1, y);
 
     return Math.min(p1, p2) + arr[x][y];
   }
