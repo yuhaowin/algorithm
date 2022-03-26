@@ -5,19 +5,6 @@ import java.util.PriorityQueue;
 public class Heap {
 
     public static void main(String[] args) {
-
-        PriorityQueue<Integer> queue = new PriorityQueue<>();
-        queue.add(5);
-        queue.add(3);
-        queue.add(7);
-        queue.add(0);
-
-        while (!queue.isEmpty()){
-            System.out.print(queue.poll());
-        }
-
-        System.out.println();
-
         int value = 1000;
         int limit = 100;
         int testTimes = 1000000;
@@ -52,7 +39,6 @@ public class Heap {
             }
         }
         System.out.println("finish!");
-
     }
 
 
@@ -79,7 +65,7 @@ public class Heap {
             throw new RuntimeException("heap is full");
         }
         heap[heapSize] = value;
-        heapInsert(heap, heapSize);
+        shiftUp(heap, heapSize);
         heapSize++;
     }
 
@@ -92,13 +78,13 @@ public class Heap {
         int ans = heap[0];
         heapSize--;
         swap(heap, 0, heapSize);
-        heapify(heap, 0, heapSize);
+        shiftDown(heap, 0, heapSize);
         return ans;
     }
 
     // 新加进来的数，现在停在了index位置，请依次往上移动，
     // 移动到0位置，或者干不掉自己的父亲了，停！
-    private void heapInsert(int[] heap, int index) {
+    private void shiftUp(int[] heap, int index) {
         // (index - 1) / 2 是当前节点的父节点
         while (heap[index] > heap[(index - 1) / 2]) {
             swap(heap, index, (index - 1) / 2);
@@ -108,7 +94,7 @@ public class Heap {
 
     // 从index位置，往下看，不断的下沉
     // 停：较大的孩子都不再比index位置的数大；已经没孩子了
-    private void heapify(int[] heap, int index, int heapSize) {
+    private void shiftDown(int[] heap, int index, int heapSize) {
         int leftIndex = 2 * index + 1;
         int rightIndex = 2 * index + 2;
         while (leftIndex < heapSize) {
