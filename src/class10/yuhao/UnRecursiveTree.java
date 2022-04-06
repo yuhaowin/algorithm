@@ -2,10 +2,12 @@ package class10.yuhao;
 
 import java.util.Stack;
 
+/**
+ * 非递归遍历二叉树
+ */
 public class UnRecursiveTree {
 
     public static void main(String[] args) {
-
         Node head = new Node(1,
                 new Node(2), new Node(3));
         UnRecursiveTree tree = new UnRecursiveTree();
@@ -17,6 +19,9 @@ public class UnRecursiveTree {
     }
 
 
+    /**
+     * 前序遍历
+     */
     public void pre(Node head) {
         Stack<Node> temp = new Stack<>();
         temp.push(head);
@@ -32,6 +37,9 @@ public class UnRecursiveTree {
         }
     }
 
+    /**
+     * 中序遍历
+     */
     public void min(Node head) {
         Stack<Node> temp = new Stack<>();
         Node cur = head;
@@ -47,6 +55,9 @@ public class UnRecursiveTree {
         }
     }
 
+    /**
+     * 后序遍历
+     */
     public void post(Node head) {
         Stack<Node> temp = new Stack<>();
         Stack<Node> temp1 = new Stack<>();
