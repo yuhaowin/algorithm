@@ -2,7 +2,7 @@ package class12.yuhao;
 
 /**
  * 二叉树的递归套路深度实践
- * 判断二叉树是否是搜索二叉树
+ * 给定一棵二叉树的头节点 head，返回这颗二叉树中最大的二叉搜索子树的 size
  * <p>
  * 搜索二叉树:
  * 每一棵子树的头节点的值大于左节点的值，头节点的值小于右节点的值，经典的搜索二叉树没有重复值。
@@ -18,7 +18,7 @@ public class MaxSubBinarySearchTreeSize {
         Node head = new Node(0,
                 new Node(-1), new Node(1));
         MaxSubBinarySearchTreeSize binarySearchTree = new MaxSubBinarySearchTreeSize();
-        System.out.println(binarySearchTree.process(head).MaxSize);
+        System.out.println(binarySearchTree.process(head).maxSize);
     }
 
     public Info process(Node head) {
@@ -33,9 +33,9 @@ public class MaxSubBinarySearchTreeSize {
         int max = Math.max(head.value, Math.max(left.max, right.max));
         boolean bst = left.isBS && right.isBS && left.max < head.value && head.value < right.min;
 
-        int maxSize = Math.max(left.MaxSize, right.MaxSize);
+        int maxSize = Math.max(left.maxSize, right.maxSize);
         if (bst) {
-            maxSize = left.MaxSize + right.MaxSize + 1;
+            maxSize = left.maxSize + right.maxSize + 1;
         }
 
         return new Info(bst, min, max, maxSize);
@@ -47,13 +47,13 @@ public class MaxSubBinarySearchTreeSize {
         public boolean isBS;
         public int min;
         public int max;
-        public int MaxSize;
+        public int maxSize;
 
         public Info(boolean isBS, int min, int max, int maxSize) {
             this.isBS = isBS;
             this.min = min;
             this.max = max;
-            MaxSize = maxSize;
+            this.maxSize = maxSize;
         }
     }
 
