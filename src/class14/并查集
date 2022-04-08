@@ -1,0 +1,20 @@
+并查集 --> dfs
+
+Disjoint-set / Union-find Forest
+是一种树型的数据结构。它的特点是由子结点找到父亲结点，用于处理一些不交集（Disjoint Sets）的合并及查询问题。
+Find：确定元素属于哪一个子集。它可以被用来确定两个元素是否属于同一子集。
+Union：将两个子集合并成同一个集合。
+
+method:
+
+findRoot(x) -- 查询 node x 的 root。
+isSameSet(a,b) -- node a, node b 是否在同一个集合里。
+union(a,b) -- 将 node a, node b 所在的集合合并为一个集合。
+
+![143648](https://image.yuhaowin.com/2022/04/07/143648.png)
+
+two key optimization:
+1、path compression,happened during findRoot
+2、union by rank,在合并时，把小的集合合并在大的集合上，这样在做 path compression 的时候操作的步骤少一点。
+
+![144600](https://image.yuhaowin.com/2022/04/07/144600.png)
