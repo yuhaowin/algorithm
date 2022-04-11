@@ -30,6 +30,7 @@ public class CardsInLine {
 
     /**
      * 先手，在 L - R 范围内拿到最好的分数
+     * 当前选的牌 + 下一轮作为后手时可以得到最好的分数
      */
     private int f1(int[] arr, int L, int R) {
         if (L == R) {
@@ -41,14 +42,18 @@ public class CardsInLine {
     }
 
     /**
-     * 后手，在 L - R 范围内拿到最差的分数
+     * 后手，在 L - R 范围内拿到最好的分数
+     * 后手只能被动接受
      */
     private int g1(int[] arr, int L, int R) {
         if (L == R) {
             return 0;
         }
+        // 如果先手拿的时 L 的牌，作为后手只能在 L+1 - R 以先手的姿态拿牌
         int p1 = f1(arr, L + 1, R);
+        // 如果先手拿的时 R 的牌，作为后手只能在 L - R-2 以先手的姿态拿牌
         int p2 = f1(arr, L, R - 1);
+        // 后手只能被动接受，只能拿到较小的分数
         return Math.min(p1, p2);
     }
 
