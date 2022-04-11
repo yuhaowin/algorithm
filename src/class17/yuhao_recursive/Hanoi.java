@@ -12,6 +12,8 @@ public class Hanoi {
         hanoi.func(3, "left", "right", "mid");
     }
 
+    //------------------------------------------------------------------------------------------------------------------
+
     private void moveLeft2Right(int n) {
         if (n == 1) {//最后一步，可以直接移动
             System.out.println(String.format("move %s from left to right", n));

@@ -17,6 +17,8 @@ public class PrintAllSubsequence {
         result.forEach(item -> System.out.println(item));
     }
 
+    //------------------------------------------------------------------------------------------------------------------
+
     private List<String> process(String str) {
         char[] chars = str.toCharArray();
         List<String> answer = new ArrayList<>();
