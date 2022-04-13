@@ -108,5 +108,4 @@ public class HeapGreater<T> {
 		indexMap.put(o2, i);
 		indexMap.put(o1, j);
 	}
-
 }
