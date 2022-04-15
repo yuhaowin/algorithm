@@ -131,6 +131,8 @@ public class Code02_SmallSum {
 				break;
 			}
 		}
+		int[] test = new int[]{6, 4, 5};
+		System.out.println(smallSum(test));
 		System.out.println(succeed ? "Nice!" : "Fucking fucked!");
 	}
 
