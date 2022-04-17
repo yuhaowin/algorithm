@@ -2,6 +2,10 @@ package leetcode.editor.cn;
 
 import java.util.PriorityQueue;
 
+/**
+ * todo 需要使用 quick sort 优化
+ * https://image.yuhaowin.com/2022/04/15/224112.png
+ */
 public class Q215KthLargestElementInAnArray {
     public static void main(String[] args) {
         Solution solution = new Q215KthLargestElementInAnArray().new Solution();
