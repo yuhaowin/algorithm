@@ -1,18 +1,13 @@
 package class01.yuhao;
 
 /**
- * @author yuhao
- * @version 5.11.0
- * @date 2021年07月26日 23:53:00
+ * 选择排序
  */
 public class SelectionSort {
 
     /**
      * https://leetcode.com/problems/sort-an-array/
      * time limit exceeded
-     *
-     * @param nums
-     * @return
      */
     public int[] sortArray(int[] nums) {
         if (nums == null || nums.length < 2) {
@@ -31,7 +26,7 @@ public class SelectionSort {
         return nums;
     }
 
-    public static void swap(int[] arr, int i, int j) {
+    private void swap(int[] arr, int i, int j) {
         int tmp = arr[i];
         arr[i] = arr[j];
         arr[j] = tmp;

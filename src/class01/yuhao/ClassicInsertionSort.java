@@ -1,9 +1,7 @@
 package class01.yuhao;
 
 /**
- * @author yuhao
- * @version 5.11.0
- * @date 2021年07月27日 21:35:00
+ * 插入排序
  */
 public class ClassicInsertionSort {
 
@@ -24,7 +22,7 @@ public class ClassicInsertionSort {
         return nums;
     }
 
-    public static void swap(int[] arr, int i, int j) {
+    private void swap(int[] arr, int i, int j) {
         int tmp = arr[i];
         arr[i] = arr[j];
         arr[j] = tmp;

@@ -1,11 +1,11 @@
 package class01.yuhao;
 
-/**
- * @author yuhao
- * @version 5.11.0
- * @date 2021年07月05日 23:48:00
- */
-public class Code01_PrintBinary {
+public class PrintBinary {
+
+    public static void main(String[] args) {
+        System.out.println(6 ^ 7);
+        System.out.println(missingNumber(new int[]{1, 2, 3, 4, 5, 7}));
+    }
 
     /**
      * & 运算
@@ -31,16 +31,10 @@ public class Code01_PrintBinary {
     public static int missingNumber(int[] nums) {
         int result = 0;
         for (int i = 0; i < nums.length; i++) {
-            int temp = i+1 ^ nums[i];
+            int temp = i + 1 ^ nums[i];
             result ^= temp;
         }
-        return result ^ nums.length +1;
-    }
-
-
-    public static void main(String[] args) {
-        System.out.println(6^7);
-        System.out.println(missingNumber(new int[]{1,2,3,4,5,7}));
+        return result ^ nums.length + 1;
     }
 }
 

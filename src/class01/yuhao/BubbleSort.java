@@ -1,9 +1,7 @@
 package class01.yuhao;
 
 /**
- * @author yuhao
- * @version 5.11.0
- * @date 2021年07月27日 21:03:00
+ * 冒泡排序
  */
 public class BubbleSort {
 
@@ -22,7 +20,7 @@ public class BubbleSort {
         return nums;
     }
 
-    public static void swap(int[] arr, int i, int j) {
+    private void swap(int[] arr, int i, int j) {
         int tmp = arr[i];
         arr[i] = arr[j];
         arr[j] = tmp;
