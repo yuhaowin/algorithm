@@ -5,7 +5,16 @@ package class01.yuhao;
  */
 public class ClassicInsertionSort {
 
-    public int[] sortArray(int[] nums) {
+    /**
+     * 插入排序 classic 插入排序
+     * 时间复杂度和数据有关，O(N) - O(n^2)
+     * 0 - 0 有序
+     * 0 - 1 有序
+     * 0 - 2 有序
+     * 0 - 3 有序
+     * 0 - N-1 有序
+     */
+    public int[] sort(int[] nums) {
         if (nums == null || nums.length < 2) {
             return nums;
         }

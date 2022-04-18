@@ -1,11 +1,11 @@
-package class02;
+package class02.yuhao;
 
-/**
- * @author yuhao
- * @version 5.11.0
- * @date 2021年07月05日 23:48:00
- */
-public class Code01_PrintBinary {
+public class PrintBinary {
+
+    public static void main(String[] args) {
+        System.out.println(6 ^ 7);
+        System.out.println(missingNumber(new int[]{1, 2, 3, 4, 5, 7}));
+    }
 
     /**
      * & 运算
@@ -15,14 +15,6 @@ public class Code01_PrintBinary {
         for (int i = 31; i >= 0; i--) {
             // 0&0=0; 0&1=0; 1&0=0; 1&1=1; 两位同时为“1”，结果才为“1”，否则为0
             System.out.print((num & (1 << i)) == 0 ? "0" : "1");
-        }
-        System.out.println();
-    }
-
-    public static void printBinary(int num) {
-        for (int i = 31; i >= 0; i--) {
-            // 0&0=0; 0&1=0; 1&0=0; 1&1=1; 两位同时为“1”，结果才为“1”，否则为0
-            System.out.print((num >> i & 1) == 1 ? "1" : "0");
         }
         System.out.println();
     }
@@ -39,18 +31,10 @@ public class Code01_PrintBinary {
     public static int missingNumber(int[] nums) {
         int result = 0;
         for (int i = 0; i < nums.length; i++) {
-            int temp = i ^ nums[i];
+            int temp = i + 1 ^ nums[i];
             result ^= temp;
         }
-        return result ^ nums.length;
-    }
-
-
-    public static void main(String[] args) {
-        print(5);
-        printBinary(5);
-        print(8);
-        System.out.println(5 ^ 5);
+        return result ^ nums.length + 1;
     }
 }
 

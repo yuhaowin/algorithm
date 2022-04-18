@@ -5,7 +5,14 @@ package class01.yuhao;
  */
 public class BubbleSort {
 
-    public int[] sortArray(int[] nums) {
+    /**
+     * 冒泡排序 O(n^2)
+     * 0 - N-1 范围，当前数和后一个数比较，谁大谁往后  -> N-1 位置数最大
+     * 0 - N-2 范围，当前数和后一个数比较，谁大谁往后  -> N-2 位置数第二大
+     * 0 - N-3 范围，当前数和后一个数比较，谁大谁往后  -> N-2 位置数第三大
+     * 0 - N-4 范围，当前数和后一个数比较，谁大谁往后  -> N-2 位置数第四大
+     */
+    public int[] sort(int[] nums) {
         if (nums == null || nums.length < 2) {
             return nums;
         }

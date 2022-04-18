@@ -1,6 +1,18 @@
 package class05.yuhao;
 
+/**
+ * 快速排序/分区交换排序 quickSort / partition exchange sort
+ */
 public class QuickSort {
+
+    public static void main(String[] args) {
+        int[] nums = new int[]{4, 7, 3, 6, 1, 9, 8, 0, 3};
+        QuickSort quickSort = new QuickSort();
+        quickSort.quickSortVersion1(nums);
+        for (int num : nums) {
+            System.out.print(num + " ");
+        }
+    }
 
     public void quickSortVersion1(int[] arr) {
         if (arr == null || arr.length < 2) {
@@ -48,7 +60,7 @@ public class QuickSort {
     }
 
     private void processVersion2(int[] arr, int L, int R) {
-        if (L == R) {
+        if (L >= R) {
             return;
         }
         int[] result = netherlandsFlag(arr, L, R);
@@ -66,7 +78,7 @@ public class QuickSort {
     }
 
     public void processVersion3(int[] arr, int L, int R) {
-        if (L == R) {
+        if (L >= R) {
             return;
         }
         swap(arr, L + (int) (Math.random() * (R - L + 1)), R);
@@ -79,7 +91,7 @@ public class QuickSort {
      * 返回等于区域的下标
      */
     private int[] netherlandsFlag(int[] arr, int L, int R) {
-        if (L > R) { // L...R L>R
+        if (L > R) {
             return new int[]{-1, -1};
         }
         if (L == R) {

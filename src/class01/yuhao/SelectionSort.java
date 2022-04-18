@@ -6,10 +6,14 @@ package class01.yuhao;
 public class SelectionSort {
 
     /**
-     * https://leetcode.com/problems/sort-an-array/
-     * time limit exceeded
+     * 选择排序 O(n^2)
+     * 0 - N-1    选择 min value 放在 0 位置
+     * 1 - N-1    选择 min value 放在 1 位置
+     * 2 - N-1    选择 min value 放在 2 位置
+     * 3 - N-1    选择 min value 放在 3 位置
+     * N-2 - N-1  选择 min value 放在 N-2 位置
      */
-    public int[] sortArray(int[] nums) {
+    public int[] sort(int[] nums) {
         if (nums == null || nums.length < 2) {
             return nums;
         }
