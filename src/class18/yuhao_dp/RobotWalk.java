@@ -26,7 +26,7 @@ public class RobotWalk {
     //------------------------------------------------------------------------------------------------------------------
 
     private int way1(int N, int start, int aim, int K) {
-        return proces1(start, K, aim, N);
+        return process1(start, K, aim, N);
     }
 
     /**
@@ -35,21 +35,21 @@ public class RobotWalk {
      * @param cur  机器人当前位置
      * @param rest 还有多少步需要走
      * @param aim  机器人的目标
-     * @param N    1-N
+     * @param N    [1,N] 机器人可以到达的位置
      * @return 机器人从 cur 走 rest 步到 aim 位置的方法数
      */
-    private int proces1(int cur, int rest, int aim, int N) {
+    private int process1(int cur, int rest, int aim, int N) {
         if (rest == 0) {
             return cur == aim ? 1 : 0;
         }
         // rest > 0
         if (cur == 1) { // 1 -> 2
-            return proces1(2, rest - 1, aim, N);
+            return process1(2, rest - 1, aim, N);
         }
         if (cur == N) {  // N-1 <- N
-            return proces1(N - 1, rest - 1, aim, N);
+            return process1(N - 1, rest - 1, aim, N);
         }
-        return proces1(cur - 1, rest - 1, aim, N) + proces1(cur + 1, rest - 1, aim, N);
+        return process1(cur - 1, rest - 1, aim, N) + process1(cur + 1, rest - 1, aim, N);
     }
 
     // 另外一种处理边界的方案
