@@ -38,7 +38,7 @@
     + [x] 53 leetcode 高频题目全讲（5）
     + [x] 54 leetcode 高频题目全讲（6）
     + [x] 55 leetcode 高频题目全讲（7）
-    + [ ] 56 leetcode 高频题目全讲（8）
+    + [x] 56 leetcode 高频题目全讲（8）
     + [ ] 57 leetcode 高频题目全讲（9）
     + [ ] 58 leetcode 高频题目全讲（10）
     + [ ] 59 leetcode 高频题目全讲（11）
