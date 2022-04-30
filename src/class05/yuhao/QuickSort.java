@@ -1,5 +1,7 @@
 package class05.yuhao;
 
+import java.util.Arrays;
+
 /**
  * 快速排序/分区交换排序 quickSort / partition exchange sort
  */
@@ -7,11 +9,21 @@ public class QuickSort {
 
     public static void main(String[] args) {
         int[] nums = new int[]{4, 7, 3, 6, 1, 9, 8, 0, 3};
+        int[] clone1 = nums.clone();
+        int[] clone2 = nums.clone();
+        int[] clone3 = nums.clone();
+
         QuickSort quickSort = new QuickSort();
-        quickSort.quickSortVersion1(nums);
-        for (int num : nums) {
-            System.out.print(num + " ");
-        }
+        quickSort.quickSortVersion1(clone1);
+        Arrays.stream(clone1).forEach(it -> System.out.print(it + " "));
+        System.out.println();
+
+        quickSort.quickSortVersion2(clone2);
+        Arrays.stream(clone2).forEach(it -> System.out.print(it + " "));
+        System.out.println();
+
+        quickSort.quickSortVersion3(clone3);
+        Arrays.stream(clone3).forEach(it -> System.out.print(it + " "));
     }
 
     public void quickSortVersion1(int[] arr) {
@@ -63,9 +75,9 @@ public class QuickSort {
         if (L >= R) {
             return;
         }
-        int[] result = netherlandsFlag(arr, L, R);
-        processVersion2(arr, L, result[0] - 1);
-        processVersion2(arr, result[1] + 1, R);
+        int[] equalArea = netherlandsFlag(arr, L, R);
+        processVersion2(arr, L, equalArea[0] - 1);
+        processVersion2(arr, equalArea[1] + 1, R);
     }
 
     //------------------------------------------------------------------------------------------------------------------
@@ -74,7 +86,7 @@ public class QuickSort {
         if (arr == null || arr.length < 2) {
             return;
         }
-        processVersion2(arr, 0, arr.length - 1);
+        processVersion3(arr, 0, arr.length - 1);
     }
 
     public void processVersion3(int[] arr, int L, int R) {
@@ -101,11 +113,11 @@ public class QuickSort {
         int more = R;       // > 区 左边界
         int index = L;
         while (index < more) { // 当前位置，不能和 >区的左边界撞上
-            if (arr[index] == arr[R]) {
-                index++;
-            } else if (arr[index] < arr[R]) {
+            if (arr[index] < arr[R]) {
                 swap(arr, less + 1, index);
                 less++;
+                index++;
+            } else if (arr[index] == arr[R]) {
                 index++;
             } else if (arr[index] > arr[R]) {
                 swap(arr, index, more - 1);
@@ -117,8 +129,10 @@ public class QuickSort {
     }
 
     private void swap(int[] arr, int i, int j) {
-        int tmp = arr[i];
-        arr[i] = arr[j];
-        arr[j] = tmp;
+        if (i != j) {
+            int temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
+        }
     }
 }
