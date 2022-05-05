@@ -5,9 +5,13 @@ import java.util.Stack;
 /**
  * 给定一个非负数组 arr，代表直方图
  * 返回直方图的最大长方形面积
- * https://leetcode.com/problems/largest-rectangle-in-histogram
+ * 84:https://leetcode.com/problems/largest-rectangle-in-histogram
  */
 public class LargestRectangleInHistogram {
+
+    public static void main(String[] args) {
+
+    }
 
     public int largestRectangleArea(int[] heights) {
         int max = 0;

@@ -5,9 +5,14 @@ import java.util.Stack;
 /**
  * 给定一个二维数组matrix，其中的值不是0就是1，
  * 返回全部由1组成的最大子矩形，内部有多少个1
- * https://leetcode.com/problems/maximal-rectangle/
+ * 85:https://leetcode.com/problems/maximal-rectangle
  */
 public class MaximalRectangle {
+
+    public static void main(String[] args) {
+
+    }
+
     public int maximalRectangle(char[][] matrix) {
         int N = matrix.length;
         int M = matrix[0].length;
