@@ -3,7 +3,9 @@ package class02.yuhao;
 public class PrintBinary {
 
     public static void main(String[] args) {
+        System.out.println(1<<0);
         System.out.println(6 ^ 7);
+        print(67);
         System.out.println(missingNumber(new int[]{1, 2, 3, 4, 5, 7}));
     }
 
