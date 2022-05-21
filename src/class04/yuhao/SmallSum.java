@@ -4,6 +4,7 @@ package class04.yuhao;
  * 给定一个数组，在每一个位置上，所有小于当前位置的数，都累加起来，返回最后的结果
  */
 public class SmallSum {
+
     public static void main(String[] args) {
         int[] test = new int[]{6, 4, 5};
         SmallSum smallSum = new SmallSum();
@@ -36,6 +37,8 @@ public class SmallSum {
         int[] help = new int[R - L + 1];
         while (p1 <= M && p2 <= R) {
             if (arr[p1] < arr[p2]) {
+                //如果 p1 < p2, 那么 p2 右边的都是大于 p1 的
+                //所以p2 右边的每一个数都要选择加上 p1
                 res += (R - p2 + 1) * arr[p1];
                 help[i++] = arr[p1++];
             } else {

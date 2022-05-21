@@ -1,15 +1,15 @@
 package leetcode.editor.en;
 
-public class Q493ReversePairs {
+public class Q493_ReversePairs {
     public static void main(String[] args) {
-        Solution solution = new Q493ReversePairs().new Solution();
-        int[] nums = new int[]{2147483647, 2147483647, 2147483647, 2147483647, 2147483647, 2147483647};
-        System.out.println(solution.reversePairs(nums) == 0);
+        Solution solution = new Q493_ReversePairs().new Solution();
+        int[] nums = new int[]{2, 4, 3, 5, 1};
+        System.out.println(solution.reversePairs(nums) == 3);
         for (int num : nums) {
             System.out.print(num + " ");
         }
         System.out.println();
-        System.out.println(((long) (2147483647) * 2));
+        System.out.println(((long) 2147483647 * 2));
         System.out.println(((long) (2147483647 * 2)));
     }
 
@@ -19,21 +19,21 @@ public class Q493ReversePairs {
             if (nums == null || nums.length < 2) {
                 return 0;
             }
-            return process(nums, 0, nums.length - 1);
+            return recursive(nums, 0, nums.length - 1);
         }
 
-        private int process(int[] arr, int L, int R) {
+        public int recursive(int[] arr, int L, int R) {
             if (L == R) {
                 return 0;
             }
             int M = (L + R) / 2;
-            int left = process(arr, L, M);
-            int right = process(arr, M + 1, R);
+            int left = recursive(arr, L, M);
+            int right = recursive(arr, M + 1, R);
             int merge = merge(arr, L, M, R);
             return left + right + merge;
         }
 
-        private int merge(int[] arr, int L, int M, int R) {
+        public int merge(int[] arr, int L, int M, int R) {
             int res = 0;
             int i = 0;
             int p1 = L;
@@ -48,6 +48,7 @@ public class Q493ReversePairs {
                 }
                 res += temp - p2;
             }
+
             while (p1 <= M && p2 <= R) {
                 if (arr[p1] < arr[p2]) {
                     help[i++] = arr[p1++];
@@ -55,7 +56,6 @@ public class Q493ReversePairs {
                     help[i++] = arr[p2++];
                 }
             }
-
             while (p1 <= M) {
                 help[i++] = arr[p1++];
             }
@@ -65,7 +65,6 @@ public class Q493ReversePairs {
             for (int j = 0; j < help.length; j++) {
                 arr[L + j] = help[j];
             }
-
             return res;
         }
     }

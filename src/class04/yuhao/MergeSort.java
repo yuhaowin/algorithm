@@ -2,7 +2,7 @@ package class04.yuhao;
 
 /**
  * 归并排序 N*logN,空间复杂的 N，需要一个辅助数组
- * f(arr,L,R) 有序
+ * recursive(arr,L,R) 有序
  * 1、求 M
  * 2、L-M 有序
  * 3、M+1-R 有序
@@ -11,6 +11,15 @@ package class04.yuhao;
  */
 public class MergeSort {
 
+    public static void main(String[] args) {
+        int[] nums = new int[]{3, 4, 2, 1, 5, 6};
+        MergeSort mergeSort = new MergeSort();
+        mergeSort.mergeSort2(nums);
+        for (int num : nums) {
+            System.out.print(num + " ");
+        }
+    }
+
     /**
      * 递归实现
      */
@@ -18,7 +27,7 @@ public class MergeSort {
         if (arr == null || arr.length < 2) {
             return;
         }
-        recursive(arr, 0, arr.length);
+        recursive(arr, 0, arr.length - 1);
     }
 
     // arr L,R 范围有序
@@ -63,6 +72,7 @@ public class MergeSort {
             if (mergeSize > N / 2) {
                 break;
             }
+            // 步长 * 2
             mergeSize <<= 1;
         }
     }
@@ -83,7 +93,7 @@ public class MergeSort {
             help[i++] = arr[p2++];
         }
         for (int j = 0; j < help.length; j++) {
-            arr[L + i] = help[i];
+            arr[L + j] = help[j];
         }
     }
 }
