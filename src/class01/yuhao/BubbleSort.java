@@ -5,6 +5,15 @@ package class01.yuhao;
  */
 public class BubbleSort {
 
+    public static void main(String[] args) {
+        int[] nums = new int[]{3, 4, 2, 1, 5, 6};
+        BubbleSort sort = new BubbleSort();
+        sort.sort(nums);
+        for (int num : nums) {
+            System.out.print(num + " ");
+        }
+    }
+
     /**
      * 冒泡排序 O(n^2)
      * 0 - N-1 范围，当前数和后一个数比较，谁大谁往后  -> N-1 位置数最大
@@ -28,8 +37,8 @@ public class BubbleSort {
     }
 
     private void swap(int[] arr, int i, int j) {
-        int tmp = arr[i];
+        int temp = arr[i];
         arr[i] = arr[j];
-        arr[j] = tmp;
+        arr[j] = temp;
     }
 }
