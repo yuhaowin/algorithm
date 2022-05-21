@@ -5,19 +5,18 @@ package class04.yuhao;
  * 输入一个数组，求出这个数组中的逆序对的总数。
  * https://leetcode-cn.com/problems/shu-zu-zhong-de-ni-xu-dui-lcof/
  */
-public class ReversePair {
+public class ReversePairsII {
     /**
      * 输入: [7,5,6,4]
      * 输出: 5
      */
     public static void main(String[] args) {
         int[] nums = new int[]{7, 5, 6, 4};
-        ReversePair reversePair = new ReversePair();
+        ReversePairsII reversePair = new ReversePairsII();
         System.out.println(reversePair.reversePairs(nums) == 5);
         for (int num : nums) {
             System.out.print(num + " ");
         }
-        System.out.println();
     }
 
     public int reversePairs(int[] nums) {
@@ -35,19 +34,19 @@ public class ReversePair {
         int M = L + ((R - L) >> 1);
         int left = process(arr, L, M);
         int right = process(arr, M + 1, R);
-        int merge = merge(arr, L, M, R);
+        int merge = merge1(arr, L, M, R);
         return left + right + merge;
     }
 
     private int merge(int[] arr, int L, int M, int R) {
-        int i = 0;
         int res = 0;
+        int i = 0;
         int p1 = L;
         int p2 = M + 1;
         int[] help = new int[R - L + 1];
         while (p1 <= M && p2 <= R) {
             if (arr[p1] > arr[p2]) {
-                // 右侧 p2 - R 都是符合要求的。
+                // 右侧 [p2, R] 都是符合要求的。
                 res += R - p2 + 1;
                 help[i++] = arr[p1++];
             } else {
@@ -66,23 +65,29 @@ public class ReversePair {
         return res;
     }
 
+    //------------------------------------------------------------------------------------------------------------------
+
     /**
      * 另外一种方法
      */
     private int merge1(int[] arr, int L, int M, int R) {
-        int i = R - L;
         int res = 0;
+        int i = R - L;
         int p1 = M;
         int p2 = R;
         int[] help = new int[R - L + 1];
-        while (p1 >= L && p2 > M) {
-            res += arr[p1] > arr[p2] ? (p2 - M) : 0;
-            help[i--] = arr[p1] > arr[p2] ? arr[p1--] : arr[p2--];
+        while (p1 >= L && p2 >= M + 1) {
+            if (arr[p1] > arr[p2]) {
+                res += p2 - M;
+                help[i--] = arr[p1--];
+            } else {
+                help[i--] = arr[p2--];
+            }
         }
         while (p1 >= L) {
             help[i--] = arr[p1--];
         }
-        while (p2 > M) {
+        while (p2 >= M + 1) {
             help[i--] = arr[p2--];
         }
         for (i = 0; i < help.length; i++) {
