@@ -4,12 +4,17 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * 统计之前数小于当前数的个数
- * todo
+ * 统计之后数大于当前数的个数
  */
 public class CountOfSmallerNumbersBeforeSelf {
 
-    static int ans = 0;
+    public static void main(String[] args) {
+        int[] nums = new int[]{1, 2, 3, 4, 5, 6, 7};
+        smallSum(nums);
+        for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
+            System.out.println(entry.getKey() + ": " + entry.getValue());
+        }
+    }
 
     static Map<Integer, Integer> map = new HashMap<>();
 
@@ -28,51 +33,35 @@ public class CountOfSmallerNumbersBeforeSelf {
     // 左 排序   merge
     // 右 排序  merge
     // merge
-    public static void process(int[] arr, int l, int r) {
-        if (l == r) {
+    public static void process(int[] arr, int L, int R) {
+        if (L == R) {
             return;
         }
-        // l < r
-        int mid = l + ((r - l) >> 1);
-        process(arr, l, mid);
-        process(arr, mid + 1, r);
-        merge(arr, l, mid, r);
+        int M = L + ((R - L) >> 1);
+        process(arr, L, M);
+        process(arr, M + 1, R);
+        merge(arr, L, M, R);
     }
 
-    public static void merge(int[] arr, int L, int m, int r) {
-        int[] help = new int[r - L + 1];
+    public static void merge(int[] arr, int L, int M, int R) {
         int i = 0;
         int p1 = L;
-        int p2 = m + 1;
-        while (p1 <= m && p2 <= r) {
-            ans += arr[p1] < arr[p2] ? (r - p2 + 1) * arr[p1] : 0;
+        int p2 = M + 1;
+        int[] help = new int[R - L + 1];
+        while (p1 <= M && p2 <= R) {
             if (arr[p1] < arr[p2]) {
-                map.put(p1, map.get(p1) + (r - p2 + 1));
+                map.put(p1, map.get(p1) + (R - p2 + 1));
             }
             help[i++] = arr[p1] < arr[p2] ? arr[p1++] : arr[p2++];
         }
-        while (p1 <= m) {
+        while (p1 <= M) {
             help[i++] = arr[p1++];
         }
-        while (p2 <= r) {
+        while (p2 <= R) {
             help[i++] = arr[p2++];
         }
         for (i = 0; i < help.length; i++) {
             arr[L + i] = help[i];
-        }
-    }
-
-
-    public static void main(String[] args) {
-        int[] test = new int[]{6, 4, 5};
-        smallSum(test);
-        System.out.println(ans);
-        for (int i : test) {
-            System.out.print(i + " ");
-        }
-        System.out.println();
-        for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
-            System.out.println(entry.getKey() + ": " + entry.getValue());
         }
     }
 }

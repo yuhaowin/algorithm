@@ -5,79 +5,85 @@ import java.util.List;
 
 /**
  * todo
- * https://leetcode.com/problems/count-of-smaller-numbers-after-self
+ * 315: https://leetcode.com/problems/count-of-smaller-numbers-after-self
  */
 public class Q315CountOfSmallerNumbersAfterSelf {
     public static void main(String[] args) {
         Solution solution = new Q315CountOfSmallerNumbersAfterSelf().new Solution();
+        int[] nums = new int[]{0, 2, 1};
+        List<Integer> result = solution.countSmaller(nums);
+        for (Integer temp : result) {
+            System.out.print(temp + " ");
+        }
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         private int[] index;
-        private int[] temp;
+        private int[] help;
         private int[] tempIndex;
         private int[] ans;
 
         public List<Integer> countSmaller(int[] nums) {
+            this.help = new int[nums.length];
             this.index = new int[nums.length];
-            this.temp = new int[nums.length];
             this.tempIndex = new int[nums.length];
             this.ans = new int[nums.length];
             for (int i = 0; i < nums.length; ++i) {
                 index[i] = i;
             }
-            int l = 0, r = nums.length - 1;
-            mergeSort(nums, l, r);
-            List<Integer> list = new ArrayList<Integer>();
+            mergeSort(nums, 0, nums.length - 1);
+            List<Integer> list = new ArrayList<>();
             for (int num : ans) {
                 list.add(num);
             }
             return list;
         }
 
-        public void mergeSort(int[] a, int l, int r) {
-            if (l >= r) {
+        public void mergeSort(int[] arr, int L, int R) {
+            if (L >= R) {
                 return;
             }
-            int mid = (l + r) >> 1;
-            mergeSort(a, l, mid);
-            mergeSort(a, mid + 1, r);
-            merge(a, l, mid, r);
+            int mid = (L + R) >> 1;
+            mergeSort(arr, L, mid);
+            mergeSort(arr, mid + 1, R);
+            merge(arr, L, mid, R);
         }
 
-        public void merge(int[] a, int l, int mid, int r) {
-            int i = l, j = mid + 1, p = l;
-            while (i <= mid && j <= r) {
-                if (a[i] <= a[j]) {
-                    temp[p] = a[i];
-                    tempIndex[p] = index[i];
-                    ans[index[i]] += (j - mid + 1);
+        public void merge(int[] arr, int L, int M, int R) {
+            int i = L;
+            int p1 = L;
+            int p2 = M + 1;
+            while (p1 <= M && p2 <= R) {
+                if (arr[p1] < arr[p2]) {
+                    help[i] = arr[p1];
+                    tempIndex[i] = index[p1];
+                    ans[index[p1]] += (p2 - M - 1);
+                    ++p1;
                     ++i;
-                    ++p;
                 } else {
-                    temp[p] = a[j];
-                    tempIndex[p] = index[j];
-                    ++j;
-                    ++p;
+                    help[i] = arr[p2];
+                    tempIndex[i] = index[p2];
+                    ++p2;
+                    ++i;
                 }
             }
-            while (i <= mid) {
-                temp[p] = a[i];
-                tempIndex[p] = index[i];
-                //ans[index[i]] += (j - mid - 1);
+            while (p1 <= M) {
+                help[i] = arr[p1];
+                tempIndex[i] = index[p1];
+                ans[index[p1]] += (p2 - M - 1);
+                ++p1;
                 ++i;
-                ++p;
             }
-            while (j <= r) {
-                temp[p] = a[j];
-                tempIndex[p] = index[j];
-                ++j;
-                ++p;
+            while (p2 <= R) {
+                help[i] = arr[p2];
+                tempIndex[i] = index[p2];
+                ++p2;
+                ++i;
             }
-            for (int k = l; k <= r; ++k) {
+            for (int k = L; k <= R; ++k) {
                 index[k] = tempIndex[k];
-                a[k] = temp[k];
+                arr[k] = help[k];
             }
         }
     }
