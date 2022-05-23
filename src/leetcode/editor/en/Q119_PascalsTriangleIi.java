@@ -29,6 +29,22 @@ public class Q119_PascalsTriangleIi {
             }
             return current;
         }
+
+        public List<Integer> getRow1(int rowIndex) {
+            List<Integer> previous = new ArrayList<>();
+            for (int i = 0; i <= rowIndex; i++) {
+                List<Integer> current = new ArrayList<>();
+                for (int j = 0; j <= i; j++) {
+                    if (j == 0 || j == i) {
+                        current.add(1);
+                    } else {
+                        current.add(previous.get(j - 1) + previous.get(j));
+                    }
+                }
+                previous = current;
+            }
+            return previous;
+        }
     }
     //leetcode submit region end(Prohibit modification and deletion)
 }
