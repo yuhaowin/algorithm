@@ -29,4 +29,4 @@
 <ul>
 	<li><code>1 &lt;= m, n &lt;= 100</code></li>
 </ul>
-<div><div>Related Topics</div><div><li>Math</li><li>Dynamic Programming</li><li>Combinatorics</li></div></div><br><div><li>👍 8657</li><li>👎 295</li></div>
+<div><div>Related Topics</div><div><li>Math</li><li>Dynamic Programming</li><li>Combinatorics</li></div></div><br><div><li>👍 8927</li><li>👎 299</li></div>
