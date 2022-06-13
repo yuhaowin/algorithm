@@ -7,5 +7,6 @@ package class29.yuhao;
  * 2) O(N + K*log N)
  * 3) O(N + k*log N)
  */
-public class TopK {
+public class MaxTopK {
+
 }
