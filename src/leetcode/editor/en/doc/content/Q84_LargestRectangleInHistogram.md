@@ -24,4 +24,4 @@ The largest rectangle is shown in the red area, which has an area = 10 units.
 	<li><code>1 &lt;= heights.length &lt;= 10<sup>5</sup></code></li>
 	<li><code>0 &lt;= heights[i] &lt;= 10<sup>4</sup></code></li>
 </ul>
-<div><div>Related Topics</div><div><li>Array</li><li>Stack</li><li>Monotonic Stack</li></div></div><br><div><li>👍 9757</li><li>👎 144</li></div>
+<div><div>Related Topics</div><div><li>Array</li><li>Stack</li><li>Monotonic Stack</li></div></div><br><div><li>👍 10826</li><li>👎 151</li></div>

@@ -2,9 +2,9 @@ package leetcode.editor.en;
 
 import java.util.Stack;
 
-public class Q84LargestRectangleInHistogram {
+public class Q84_LargestRectangleInHistogram {
     public static void main(String[] args) {
-        Solution solution = new Q84LargestRectangleInHistogram().new Solution();
+        Solution solution = new Q84_LargestRectangleInHistogram().new Solution();
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)

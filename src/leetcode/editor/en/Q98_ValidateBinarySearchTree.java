@@ -1,5 +1,8 @@
 package leetcode.editor.en;
 
+/**
+ * todo 中序遍历，是否一直升序，morris 遍历
+ */
 public class Q98_ValidateBinarySearchTree {
     public static void main(String[] args) {
         Solution solution = new Q98_ValidateBinarySearchTree().new Solution();

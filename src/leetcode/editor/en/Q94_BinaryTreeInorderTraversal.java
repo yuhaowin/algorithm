@@ -3,6 +3,10 @@ package leetcode.editor.en;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * https://image.yuhaowin.com/2022/07/09/172720.png
+ * todo morris 遍历
+ */
 public class Q94_BinaryTreeInorderTraversal {
     public static void main(String[] args) {
         Solution solution = new Q94_BinaryTreeInorderTraversal().new Solution();
