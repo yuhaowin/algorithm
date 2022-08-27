@@ -1,3 +1,5 @@
 /out
 *.iml
 .idea
+/src/leetcode/editor/en/doc/note/
+/src/leetcode/editor/en/doc/solution/
