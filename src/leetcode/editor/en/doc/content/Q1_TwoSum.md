@@ -4,7 +4,7 @@
 
 <p>You can return the answer in any order.</p>
 
-<p>&nbsp;</p>
+<p>&nbsp;</p> 
 <p><strong>Example 1:</strong></p>
 
 <pre>
@@ -27,15 +27,18 @@
 <strong>Output:</strong> [0,1]
 </pre>
 
-<p>&nbsp;</p>
+<p>&nbsp;</p> 
 <p><strong>Constraints:</strong></p>
 
-<ul>
-	<li><code>2 &lt;= nums.length &lt;= 10<sup>4</sup></code></li>
-	<li><code>-10<sup>9</sup> &lt;= nums[i] &lt;= 10<sup>9</sup></code></li>
-	<li><code>-10<sup>9</sup> &lt;= target &lt;= 10<sup>9</sup></code></li>
-	<li><strong>Only one valid answer exists.</strong></li>
+<ul> 
+ <li><code>2 &lt;= nums.length &lt;= 10<sup>4</sup></code></li> 
+ <li><code>-10<sup>9</sup> &lt;= nums[i] &lt;= 10<sup>9</sup></code></li> 
+ <li><code>-10<sup>9</sup> &lt;= target &lt;= 10<sup>9</sup></code></li> 
+ <li><strong>Only one valid answer exists.</strong></li> 
 </ul>
 
-<p>&nbsp;</p>
-<strong>Follow-up:&nbsp;</strong>Can you come up with an algorithm that is less than&nbsp;<code>O(n<sup>2</sup>)&nbsp;</code>time complexity?<div><div>Related Topics</div><div><li>Array</li><li>Hash Table</li></div></div><br><div><li>👍 31156</li><li>👎 983</li></div>
+<p>&nbsp;</p> 
+<strong>Follow-up:&nbsp;</strong>Can you come up with an algorithm that is less than&nbsp;
+<code>O(n<sup>2</sup>)&nbsp;</code>time complexity?
+
+<div><div>Related Topics</div><div><li>Array</li><li>Hash Table</li></div></div><br><div><li>👍 36784</li><li>👎 1171</li></div>

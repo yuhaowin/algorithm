@@ -3,9 +3,9 @@ package leetcode.editor.en;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Q54SpiralMatrix {
+public class Q54_SpiralMatrix {
     public static void main(String[] args) {
-        Solution solution = new Q54SpiralMatrix().new Solution();
+        Solution solution = new Q54_SpiralMatrix().new Solution();
         int[][] matrix = new int[][]{
                 {1, 2, 3},
                 {4, 5, 6},

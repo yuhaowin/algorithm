@@ -6,9 +6,9 @@
 
 <p><strong>Notice</strong> that you may not slant the container.</p>
 
-<p>&nbsp;</p>
-<p><strong>Example 1:</strong></p>
-<img alt="" src="https://s3-lc-upload.s3.amazonaws.com/uploads/2018/07/17/question_11.jpg" style="width: 600px; height: 287px;" />
+<p>&nbsp;</p> 
+<p><strong>Example 1:</strong></p> 
+<img alt="" src="https://s3-lc-upload.s3.amazonaws.com/uploads/2018/07/17/question_11.jpg" style="width: 600px; height: 287px;" /> 
 <pre>
 <strong>Input:</strong> height = [1,8,6,2,5,4,8,3,7]
 <strong>Output:</strong> 49
@@ -22,12 +22,13 @@
 <strong>Output:</strong> 1
 </pre>
 
-<p>&nbsp;</p>
+<p>&nbsp;</p> 
 <p><strong>Constraints:</strong></p>
 
-<ul>
-	<li><code>n == height.length</code></li>
-	<li><code>2 &lt;= n &lt;= 10<sup>5</sup></code></li>
-	<li><code>0 &lt;= height[i] &lt;= 10<sup>4</sup></code></li>
+<ul> 
+ <li><code>n == height.length</code></li> 
+ <li><code>2 &lt;= n &lt;= 10<sup>5</sup></code></li> 
+ <li><code>0 &lt;= height[i] &lt;= 10<sup>4</sup></code></li> 
 </ul>
-<div><div>Related Topics</div><div><li>Array</li><li>Two Pointers</li><li>Greedy</li></div></div><br><div><li>👍 16771</li><li>👎 946</li></div>
+
+<div><div>Related Topics</div><div><li>Array</li><li>Two Pointers</li><li>Greedy</li></div></div><br><div><li>👍 19566</li><li>👎 1048</li></div>

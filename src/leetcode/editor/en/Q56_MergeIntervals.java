@@ -2,9 +2,9 @@ package leetcode.editor.en;
 
 import java.util.*;
 
-public class Q56MergeIntervals {
+public class Q56_MergeIntervals {
     public static void main(String[] args) {
-        Solution solution = new Q56MergeIntervals().new Solution();
+        Solution solution = new Q56_MergeIntervals().new Solution();
         int[][] nums = new int[][]{
                 {1, 3}, {2, 6}, {8, 10}, {15, 18}
         };

@@ -2,9 +2,9 @@ package leetcode.editor.en;
 
 import java.util.*;
 
-public class Q49GroupAnagrams {
+public class Q49_GroupAnagrams {
     public static void main(String[] args) {
-        Solution solution = new Q49GroupAnagrams().new Solution();
+        Solution solution = new Q49_GroupAnagrams().new Solution();
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)

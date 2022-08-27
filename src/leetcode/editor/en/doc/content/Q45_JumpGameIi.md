@@ -6,7 +6,7 @@
 
 <p>You can assume that you can always reach the last index.</p>
 
-<p>&nbsp;</p>
+<p>&nbsp;</p> 
 <p><strong>Example 1:</strong></p>
 
 <pre>
@@ -22,11 +22,12 @@
 <strong>Output:</strong> 2
 </pre>
 
-<p>&nbsp;</p>
+<p>&nbsp;</p> 
 <p><strong>Constraints:</strong></p>
 
-<ul>
-	<li><code>1 &lt;= nums.length &lt;= 10<sup>4</sup></code></li>
-	<li><code>0 &lt;= nums[i] &lt;= 1000</code></li>
+<ul> 
+ <li><code>1 &lt;= nums.length &lt;= 10<sup>4</sup></code></li> 
+ <li><code>0 &lt;= nums[i] &lt;= 1000</code></li> 
 </ul>
-<div><div>Related Topics</div><div><li>Array</li><li>Dynamic Programming</li><li>Greedy</li></div></div><br><div><li>👍 7852</li><li>👎 293</li></div>
+
+<div><div>Related Topics</div><div><li>Array</li><li>Dynamic Programming</li><li>Greedy</li></div></div><br><div><li>👍 9324</li><li>👎 330</li></div>

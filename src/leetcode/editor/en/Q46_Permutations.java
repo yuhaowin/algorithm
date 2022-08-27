@@ -3,9 +3,9 @@ package leetcode.editor.en;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Q46Permutations {
+public class Q46_Permutations {
     public static void main(String[] args) {
-        Solution solution = new Q46Permutations().new Solution();
+        Solution solution = new Q46_Permutations().new Solution();
         int[] nums = new int[]{1, 2, 3};
         solution.permute(nums).stream().forEach((item) -> System.out.println(item.toString()));
     }

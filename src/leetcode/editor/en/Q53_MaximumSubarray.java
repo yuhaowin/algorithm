@@ -8,9 +8,9 @@ import java.util.PriorityQueue;
  * 组合、子序列问题
  * 求 0-i 范围所有情况，不需要一定以 i 结尾
  */
-public class Q53MaximumSubarray {
+public class Q53_MaximumSubarray {
     public static void main(String[] args) {
-        Solution solution = new Q53MaximumSubarray().new Solution();
+        Solution solution = new Q53_MaximumSubarray().new Solution();
         int[] nums = new int[]{-2, 1, -3, 4, -1, 2, 1, -5, 4};
         System.out.println(solution.maxSubArray(nums));
     }

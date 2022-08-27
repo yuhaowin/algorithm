@@ -1,8 +1,8 @@
 package leetcode.editor.en;
 
-public class Q50PowxN {
+public class Q50_PowxN {
     public static void main(String[] args) {
-        Solution solution = new Q50PowxN().new Solution();
+        Solution solution = new Q50_PowxN().new Solution();
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)

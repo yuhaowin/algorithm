@@ -1,8 +1,8 @@
 package leetcode.editor.en;
 
-public class Q48RotateImage {
+public class Q48_RotateImage {
     public static void main(String[] args) {
-        Solution solution = new Q48RotateImage().new Solution();
+        Solution solution = new Q48_RotateImage().new Solution();
         int[][] matrix = new int[][]{
                 {5, 1, 9, 11},
                 {2, 4, 8, 10},

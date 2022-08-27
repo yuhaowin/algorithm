@@ -13,9 +13,9 @@ import java.util.Map;
  * 2、i-1 位置对应的字符串推到的位置，因为如果超过这个位置，那 i-1 位置的字符串就重复了。
  * 求 2 个 index 大的那一个作为本次的最左的位置。
  */
-public class Q3LongestSubstringWithoutRepeatingCharacters {
+public class Q3_LongestSubstringWithoutRepeatingCharacters {
     public static void main(String[] args) {
-        Solution solution = new Q3LongestSubstringWithoutRepeatingCharacters().new Solution();
+        Solution solution = new Q3_LongestSubstringWithoutRepeatingCharacters().new Solution();
         String s = "abba";
         System.out.println(solution.lengthOfLongestSubstring(s));
     }

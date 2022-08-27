@@ -1,8 +1,8 @@
 package leetcode.editor.en;
 
-public class Q7ReverseInteger {
+public class Q7_ReverseInteger {
     public static void main(String[] args) {
-        Solution solution = new Q7ReverseInteger().new Solution();
+        Solution solution = new Q7_ReverseInteger().new Solution();
         int x = 1002;
         System.out.println(solution.reverse(x));
     }

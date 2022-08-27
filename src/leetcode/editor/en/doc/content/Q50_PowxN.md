@@ -1,6 +1,6 @@
 <p>Implement <a href="http://www.cplusplus.com/reference/valarray/pow/" target="_blank">pow(x, n)</a>, which calculates <code>x</code> raised to the power <code>n</code> (i.e., <code>x<sup>n</sup></code>).</p>
 
-<p>&nbsp;</p>
+<p>&nbsp;</p> 
 <p><strong>Example 1:</strong></p>
 
 <pre>
@@ -23,12 +23,13 @@
 <strong>Explanation:</strong> 2<sup>-2</sup> = 1/2<sup>2</sup> = 1/4 = 0.25
 </pre>
 
-<p>&nbsp;</p>
+<p>&nbsp;</p> 
 <p><strong>Constraints:</strong></p>
 
-<ul>
-	<li><code>-100.0 &lt; x &lt; 100.0</code></li>
-	<li><code>-2<sup>31</sup> &lt;= n &lt;= 2<sup>31</sup>-1</code></li>
-	<li><code>-10<sup>4</sup> &lt;= x<sup>n</sup> &lt;= 10<sup>4</sup></code></li>
+<ul> 
+ <li><code>-100.0 &lt; x &lt; 100.0</code></li> 
+ <li><code>-2<sup>31</sup> &lt;= n &lt;= 2<sup>31</sup>-1</code></li> 
+ <li><code>-10<sup>4</sup> &lt;= x<sup>n</sup> &lt;= 10<sup>4</sup></code></li> 
 </ul>
-<div><div>Related Topics</div><div><li>Math</li><li>Recursion</li></div></div><br><div><li>👍 4405</li><li>👎 5372</li></div>
+
+<div><div>Related Topics</div><div><li>Math</li><li>Recursion</li></div></div><br><div><li>👍 5514</li><li>👎 6158</li></div>

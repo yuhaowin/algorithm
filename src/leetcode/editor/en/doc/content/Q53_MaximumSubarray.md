@@ -2,7 +2,7 @@
 
 <p>A <strong>subarray</strong> is a <strong>contiguous</strong> part of an array.</p>
 
-<p>&nbsp;</p>
+<p>&nbsp;</p> 
 <p><strong>Example 1:</strong></p>
 
 <pre>
@@ -25,14 +25,15 @@
 <strong>Output:</strong> 23
 </pre>
 
-<p>&nbsp;</p>
+<p>&nbsp;</p> 
 <p><strong>Constraints:</strong></p>
 
-<ul>
-	<li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>
-	<li><code>-10<sup>4</sup> &lt;= nums[i] &lt;= 10<sup>4</sup></code></li>
+<ul> 
+ <li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li> 
+ <li><code>-10<sup>4</sup> &lt;= nums[i] &lt;= 10<sup>4</sup></code></li> 
 </ul>
 
-<p>&nbsp;</p>
+<p>&nbsp;</p> 
 <p><strong>Follow up:</strong> If you have figured out the <code>O(n)</code> solution, try coding another solution using the <strong>divide and conquer</strong> approach, which is more subtle.</p>
-<div><div>Related Topics</div><div><li>Array</li><li>Divide and Conquer</li><li>Dynamic Programming</li></div></div><br><div><li>👍 20236</li><li>👎 991</li></div>
+
+<div><div>Related Topics</div><div><li>Array</li><li>Divide and Conquer</li><li>Dynamic Programming</li></div></div><br><div><li>👍 24285</li><li>👎 1141</li></div>

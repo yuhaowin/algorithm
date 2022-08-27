@@ -1,8 +1,8 @@
-<p>You are given an integer array <code>nums</code>. You are initially positioned at the array&#39;s <strong>first index</strong>, and each element in the array represents your maximum jump length at that position.</p>
+<p>You are given an integer array <code>nums</code>. You are initially positioned at the array's <strong>first index</strong>, and each element in the array represents your maximum jump length at that position.</p>
 
 <p>Return <code>true</code><em> if you can reach the last index, or </em><code>false</code><em> otherwise</em>.</p>
 
-<p>&nbsp;</p>
+<p>&nbsp;</p> 
 <p><strong>Example 1:</strong></p>
 
 <pre>
@@ -19,11 +19,12 @@
 <strong>Explanation:</strong> You will always arrive at index 3 no matter what. Its maximum jump length is 0, which makes it impossible to reach the last index.
 </pre>
 
-<p>&nbsp;</p>
+<p>&nbsp;</p> 
 <p><strong>Constraints:</strong></p>
 
-<ul>
-	<li><code>1 &lt;= nums.length &lt;= 10<sup>4</sup></code></li>
-	<li><code>0 &lt;= nums[i] &lt;= 10<sup>5</sup></code></li>
+<ul> 
+ <li><code>1 &lt;= nums.length &lt;= 10<sup>4</sup></code></li> 
+ <li><code>0 &lt;= nums[i] &lt;= 10<sup>5</sup></code></li> 
 </ul>
-<div><div>Related Topics</div><div><li>Array</li><li>Dynamic Programming</li><li>Greedy</li></div></div><br><div><li>👍 10756</li><li>👎 615</li></div>
+
+<div><div>Related Topics</div><div><li>Array</li><li>Dynamic Programming</li><li>Greedy</li></div></div><br><div><li>👍 12715</li><li>👎 670</li></div>

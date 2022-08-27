@@ -2,9 +2,9 @@ package leetcode.editor.en;
 
 import java.util.Stack;
 
-public class Q42TrappingRainWater {
+public class Q42_TrappingRainWater {
     public static void main(String[] args) {
-        Solution solution = new Q42TrappingRainWater().new Solution();
+        Solution solution = new Q42_TrappingRainWater().new Solution();
         int[] height = new int[]{0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1};
         System.out.println(solution.trap(height));
     }

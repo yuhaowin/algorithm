@@ -2,9 +2,9 @@
 
 <p>You may assume the two numbers do not contain any leading zero, except the number 0 itself.</p>
 
-<p>&nbsp;</p>
-<p><strong>Example 1:</strong></p>
-<img alt="" src="https://assets.leetcode.com/uploads/2020/10/02/addtwonumber1.jpg" style="width: 483px; height: 342px;" />
+<p>&nbsp;</p> 
+<p><strong>Example 1:</strong></p> 
+<img alt="" src="https://assets.leetcode.com/uploads/2020/10/02/addtwonumber1.jpg" style="width: 483px; height: 342px;" /> 
 <pre>
 <strong>Input:</strong> l1 = [2,4,3], l2 = [5,6,4]
 <strong>Output:</strong> [7,0,8]
@@ -25,12 +25,13 @@
 <strong>Output:</strong> [8,9,9,9,0,0,0,1]
 </pre>
 
-<p>&nbsp;</p>
+<p>&nbsp;</p> 
 <p><strong>Constraints:</strong></p>
 
-<ul>
-	<li>The number of nodes in each linked list is in the range <code>[1, 100]</code>.</li>
-	<li><code>0 &lt;= Node.val &lt;= 9</code></li>
-	<li>It is guaranteed that the list represents a number that does not have leading zeros.</li>
+<ul> 
+ <li>The number of nodes in each linked list is in the range <code>[1, 100]</code>.</li> 
+ <li><code>0 &lt;= Node.val &lt;= 9</code></li> 
+ <li>It is guaranteed that the list represents a number that does not have leading zeros.</li> 
 </ul>
-<div><div>Related Topics</div><div><li>Linked List</li><li>Math</li><li>Recursion</li></div></div><br><div><li>👍 18152</li><li>👎 3730</li></div>
+
+<div><div>Related Topics</div><div><li>Linked List</li><li>Math</li><li>Recursion</li></div></div><br><div><li>👍 20945</li><li>👎 4135</li></div>

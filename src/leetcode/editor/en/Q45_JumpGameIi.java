@@ -3,9 +3,9 @@ package leetcode.editor.en;
 /**
  * class 6  28:53
  */
-public class Q45JumpGameIi {
+public class Q45_JumpGameIi {
     public static void main(String[] args) {
-        Solution solution = new Q45JumpGameIi().new Solution();
+        Solution solution = new Q45_JumpGameIi().new Solution();
         int[] nums = new int[]{2, 3, 1, 1, 4};
         System.out.println(solution.jump(nums));
         nums = new int[]{2, 0, 2, 0, 1};

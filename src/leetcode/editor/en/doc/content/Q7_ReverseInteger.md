@@ -2,7 +2,7 @@
 
 <p><strong>Assume the environment does not allow you to store 64-bit integers (signed or unsigned).</strong></p>
 
-<p>&nbsp;</p>
+<p>&nbsp;</p> 
 <p><strong>Example 1:</strong></p>
 
 <pre>
@@ -24,10 +24,11 @@
 <strong>Output:</strong> 21
 </pre>
 
-<p>&nbsp;</p>
+<p>&nbsp;</p> 
 <p><strong>Constraints:</strong></p>
 
-<ul>
-	<li><code>-2<sup>31</sup> &lt;= x &lt;= 2<sup>31</sup> - 1</code></li>
+<ul> 
+ <li><code>-2<sup>31</sup> &lt;= x &lt;= 2<sup>31</sup> - 1</code></li> 
 </ul>
-<div><div>Related Topics</div><div><li>Math</li></div></div><br><div><li>👍 7100</li><li>👎 9698</li></div>
+
+<div><div>Related Topics</div><div><li>Math</li></div></div><br><div><li>👍 8120</li><li>👎 10507</li></div>

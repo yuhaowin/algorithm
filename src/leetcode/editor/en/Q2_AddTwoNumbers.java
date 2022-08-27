@@ -1,8 +1,8 @@
 package leetcode.editor.en;
 
-public class Q2AddTwoNumbers {
+public class Q2_AddTwoNumbers {
     public static void main(String[] args) {
-        Solution solution = new Q2AddTwoNumbers().new Solution();
+        Solution solution = new Q2_AddTwoNumbers().new Solution();
         ListNode l1 = new ListNode(2, new ListNode(4, new ListNode(3)));
         ListNode l2 = new ListNode(5, new ListNode(6, new ListNode(4)));
         ListNode ans = solution.addTwoNumbers(l1, l2);
