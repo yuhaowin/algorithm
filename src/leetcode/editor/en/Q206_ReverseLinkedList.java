@@ -3,9 +3,9 @@ package leetcode.editor.en;
 /**
  * 反转单链表
  */
-public class Q206ReverseLinkedList {
+public class Q206_ReverseLinkedList {
     public static void main(String[] args) {
-        Solution solution = new Q206ReverseLinkedList().new Solution();
+        Solution solution = new Q206_ReverseLinkedList().new Solution();
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)

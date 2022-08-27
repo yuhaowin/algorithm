@@ -4,9 +4,9 @@
 
 <p><strong>Note:</strong>&nbsp;A leaf is a node with no children.</p>
 
-<p>&nbsp;</p>
-<p><strong>Example 1:</strong></p>
-<img alt="" src="https://assets.leetcode.com/uploads/2020/10/12/ex_depth.jpg" style="width: 432px; height: 302px;" />
+<p>&nbsp;</p> 
+<p><strong>Example 1:</strong></p> 
+<img alt="" src="https://assets.leetcode.com/uploads/2020/10/12/ex_depth.jpg" style="width: 432px; height: 302px;" /> 
 <pre>
 <strong>Input:</strong> root = [3,9,20,null,null,15,7]
 <strong>Output:</strong> 2
@@ -19,11 +19,12 @@
 <strong>Output:</strong> 5
 </pre>
 
-<p>&nbsp;</p>
+<p>&nbsp;</p> 
 <p><strong>Constraints:</strong></p>
 
-<ul>
-	<li>The number of nodes in the tree is in the range <code>[0, 10<sup>5</sup>]</code>.</li>
-	<li><code>-1000 &lt;= Node.val &lt;= 1000</code></li>
+<ul> 
+ <li>The number of nodes in the tree is in the range <code>[0, 10<sup>5</sup>]</code>.</li> 
+ <li><code>-1000 &lt;= Node.val &lt;= 1000</code></li> 
 </ul>
-<div><div>Related Topics</div><div><li>Tree</li><li>Depth-First Search</li><li>Breadth-First Search</li><li>Binary Tree</li></div></div><br><div><li>👍 4044</li><li>👎 946</li></div>
+
+<div><div>Related Topics</div><div><li>Tree</li><li>Depth-First Search</li><li>Breadth-First Search</li><li>Binary Tree</li></div></div><br><div><li>👍 4705</li><li>👎 986</li></div>

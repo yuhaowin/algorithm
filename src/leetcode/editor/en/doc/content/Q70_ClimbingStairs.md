@@ -2,7 +2,7 @@
 
 <p>Each time you can either climb <code>1</code> or <code>2</code> steps. In how many distinct ways can you climb to the top?</p>
 
-<p>&nbsp;</p>
+<p>&nbsp;</p> 
 <p><strong>Example 1:</strong></p>
 
 <pre>
@@ -24,10 +24,11 @@
 3. 2 steps + 1 step
 </pre>
 
-<p>&nbsp;</p>
+<p>&nbsp;</p> 
 <p><strong>Constraints:</strong></p>
 
-<ul>
-	<li><code>1 &lt;= n &lt;= 45</code></li>
+<ul> 
+ <li><code>1 &lt;= n &lt;= 45</code></li> 
 </ul>
-<div><div>Related Topics</div><div><li>Math</li><li>Dynamic Programming</li><li>Memoization</li></div></div><br><div><li>👍 11541</li><li>👎 360</li></div>
+
+<div><div>Related Topics</div><div><li>Math</li><li>Dynamic Programming</li><li>Memoization</li></div></div><br><div><li>👍 13927</li><li>👎 410</li></div>

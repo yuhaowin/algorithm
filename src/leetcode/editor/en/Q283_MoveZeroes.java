@@ -1,8 +1,8 @@
 package leetcode.editor.en;
 
-public class Q283MoveZeroes {
+public class Q283_MoveZeroes {
     public static void main(String[] args) {
-        Solution solution = new Q283MoveZeroes().new Solution();
+        Solution solution = new Q283_MoveZeroes().new Solution();
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)

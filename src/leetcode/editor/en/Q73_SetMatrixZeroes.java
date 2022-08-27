@@ -4,9 +4,9 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
-public class Q73SetMatrixZeroes {
+public class Q73_SetMatrixZeroes {
     public static void main(String[] args) {
-        Solution solution = new Q73SetMatrixZeroes().new Solution();
+        Solution solution = new Q73_SetMatrixZeroes().new Solution();
         int[][] matrix = new int[][]{
                 {1, 1, 1},
                 {1, 0, 1},

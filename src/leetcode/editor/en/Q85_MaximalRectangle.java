@@ -2,9 +2,9 @@ package leetcode.editor.en;
 
 import java.util.Stack;
 
-public class Q85MaximalRectangle {
+public class Q85_MaximalRectangle {
     public static void main(String[] args) {
-        Solution solution = new Q85MaximalRectangle().new Solution();
+        Solution solution = new Q85_MaximalRectangle().new Solution();
         char[][] matrix = new char[][]{
                 {'1', '0', '1', '0', '0'}
                 , {'1', '0', '1', '1', '1'}

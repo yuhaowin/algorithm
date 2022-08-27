@@ -1,8 +1,8 @@
 package leetcode.editor.en;
 
-public class Q70ClimbingStairs {
+public class Q70_ClimbingStairs {
     public static void main(String[] args) {
-        Solution solution = new Q70ClimbingStairs().new Solution();
+        Solution solution = new Q70_ClimbingStairs().new Solution();
         System.out.println(solution.climbStairs(2));
     }
 

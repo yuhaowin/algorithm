@@ -2,9 +2,9 @@
 
 <p>We will use the integers <code>0</code>, <code>1</code>, and <code>2</code> to represent the color red, white, and blue, respectively.</p>
 
-<p>You must solve this problem without using the library&#39;s sort function.</p>
+<p>You must solve this problem without using the library's sort function.</p>
 
-<p>&nbsp;</p>
+<p>&nbsp;</p> 
 <p><strong>Example 1:</strong></p>
 
 <pre>
@@ -19,15 +19,16 @@
 <strong>Output:</strong> [0,1,2]
 </pre>
 
-<p>&nbsp;</p>
+<p>&nbsp;</p> 
 <p><strong>Constraints:</strong></p>
 
-<ul>
-	<li><code>n == nums.length</code></li>
-	<li><code>1 &lt;= n &lt;= 300</code></li>
-	<li><code>nums[i]</code> is either <code>0</code>, <code>1</code>, or <code>2</code>.</li>
+<ul> 
+ <li><code>n == nums.length</code></li> 
+ <li><code>1 &lt;= n &lt;= 300</code></li> 
+ <li><code>nums[i]</code> is either <code>0</code>, <code>1</code>, or <code>2</code>.</li> 
 </ul>
 
-<p>&nbsp;</p>
+<p>&nbsp;</p> 
 <p><strong>Follow up:</strong>&nbsp;Could you come up with a one-pass algorithm using only&nbsp;constant extra space?</p>
-<div><div>Related Topics</div><div><li>Array</li><li>Two Pointers</li><li>Sorting</li></div></div><br><div><li>👍 9441</li><li>👎 408</li></div>
+
+<div><div>Related Topics</div><div><li>Array</li><li>Two Pointers</li><li>Sorting</li></div></div><br><div><li>👍 11738</li><li>👎 443</li></div>

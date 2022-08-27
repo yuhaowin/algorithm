@@ -1,8 +1,8 @@
 package leetcode.editor.en;
 
-public class Q75SortColors {
+public class Q75_SortColors {
     public static void main(String[] args) {
-        Solution solution = new Q75SortColors().new Solution();
+        Solution solution = new Q75_SortColors().new Solution();
         int[] nums = new int[]{2, 0, 2, 1, 1, 0};
         solution.sortColors(nums);
         for (int num : nums) {

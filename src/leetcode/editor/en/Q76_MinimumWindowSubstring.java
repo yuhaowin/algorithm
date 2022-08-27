@@ -1,8 +1,8 @@
 package leetcode.editor.en;
 
-public class Q76MinimumWindowSubstring {
+public class Q76_MinimumWindowSubstring {
     public static void main(String[] args) {
-        Solution solution = new Q76MinimumWindowSubstring().new Solution();
+        Solution solution = new Q76_MinimumWindowSubstring().new Solution();
         String s = "ADOBECODEBANC";
         String t = "ABC";
         System.out.println(solution.minWindow(s, t));

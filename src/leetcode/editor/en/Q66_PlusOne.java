@@ -1,8 +1,8 @@
 package leetcode.editor.en;
 
-public class Q66PlusOne {
+public class Q66_PlusOne {
     public static void main(String[] args) {
-        Solution solution = new Q66PlusOne().new Solution();
+        Solution solution = new Q66_PlusOne().new Solution();
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)

@@ -1,8 +1,8 @@
 package leetcode.editor.en;
 
-public class Q344ReverseString {
+public class Q344_ReverseString {
     public static void main(String[] args) {
-        Solution solution = new Q344ReverseString().new Solution();
+        Solution solution = new Q344_ReverseString().new Solution();
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)

@@ -1,8 +1,8 @@
 package leetcode.editor.en;
 
-public class Q221MaximalSquare {
+public class Q221_MaximalSquare {
     public static void main(String[] args) {
-        Solution solution = new Q221MaximalSquare().new Solution();
+        Solution solution = new Q221_MaximalSquare().new Solution();
         char[][] matrix = new char[][]{
                 {'1', '0', '1', '0', '0'}
                 , {'1', '0', '1', '1', '1'}

@@ -1,8 +1,8 @@
-<p>You are given a <strong>large integer</strong> represented as an integer array <code>digits</code>, where each <code>digits[i]</code> is the <code>i<sup>th</sup></code> digit of the integer. The digits are ordered from most significant to least significant in left-to-right order. The large integer does not contain any leading <code>0</code>&#39;s.</p>
+<p>You are given a <strong>large integer</strong> represented as an integer array <code>digits</code>, where each <code>digits[i]</code> is the <code>i<sup>th</sup></code> digit of the integer. The digits are ordered from most significant to least significant in left-to-right order. The large integer does not contain any leading <code>0</code>'s.</p>
 
 <p>Increment the large integer by one and return <em>the resulting array of digits</em>.</p>
 
-<p>&nbsp;</p>
+<p>&nbsp;</p> 
 <p><strong>Example 1:</strong></p>
 
 <pre>
@@ -33,12 +33,13 @@ Incrementing by one gives 9 + 1 = 10.
 Thus, the result should be [1,0].
 </pre>
 
-<p>&nbsp;</p>
+<p>&nbsp;</p> 
 <p><strong>Constraints:</strong></p>
 
-<ul>
-	<li><code>1 &lt;= digits.length &lt;= 100</code></li>
-	<li><code>0 &lt;= digits[i] &lt;= 9</code></li>
-	<li><code>digits</code> does not contain any leading <code>0</code>&#39;s.</li>
+<ul> 
+ <li><code>1 &lt;= digits.length &lt;= 100</code></li> 
+ <li><code>0 &lt;= digits[i] &lt;= 9</code></li> 
+ <li><code>digits</code> does not contain any leading <code>0</code>'s.</li> 
 </ul>
-<div><div>Related Topics</div><div><li>Array</li><li>Math</li></div></div><br><div><li>👍 4099</li><li>👎 4105</li></div>
+
+<div><div>Related Topics</div><div><li>Array</li><li>Math</li></div></div><br><div><li>👍 5064</li><li>👎 4400</li></div>

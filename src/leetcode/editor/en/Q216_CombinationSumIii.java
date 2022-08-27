@@ -2,9 +2,9 @@ package leetcode.editor.en;
 
 import java.util.List;
 
-public class Q216CombinationSumIii {
+public class Q216_CombinationSumIii {
     public static void main(String[] args) {
-        Solution solution = new Q216CombinationSumIii().new Solution();
+        Solution solution = new Q216_CombinationSumIii().new Solution();
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)

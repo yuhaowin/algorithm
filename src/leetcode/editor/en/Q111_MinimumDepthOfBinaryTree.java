@@ -1,8 +1,8 @@
 package leetcode.editor.en;
 
-public class Q111MinimumDepthOfBinaryTree {
+public class Q111_MinimumDepthOfBinaryTree {
     public static void main(String[] args) {
-        Solution solution = new Q111MinimumDepthOfBinaryTree().new Solution();
+        Solution solution = new Q111_MinimumDepthOfBinaryTree().new Solution();
         TreeNode root = new TreeNode(3, new TreeNode(9), new TreeNode(20, new TreeNode(15), new TreeNode(7)));
         System.out.println(solution.minDepth(root));
     }
