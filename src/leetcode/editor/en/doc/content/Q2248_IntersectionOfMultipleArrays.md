@@ -1,5 +1,6 @@
 Given a 2D integer array <code>nums</code> where <code>nums[i]</code> is a non-empty array of <strong>distinct</strong> positive integers, return <em>the list of integers that are present in <strong>each array</strong> of</em> <code>nums</code><em> sorted in <strong>ascending order</strong></em>.
-<p>&nbsp;</p>
+
+<p>&nbsp;</p> 
 <p><strong>Example 1:</strong></p>
 
 <pre>
@@ -17,13 +18,14 @@ The only integers present in each of nums[0] = [<u><strong>3</strong></u>,1,2,<u
 There does not exist any integer present both in nums[0] and nums[1], so we return an empty list [].
 </pre>
 
-<p>&nbsp;</p>
+<p>&nbsp;</p> 
 <p><strong>Constraints:</strong></p>
 
-<ul>
-	<li><code>1 &lt;= nums.length &lt;= 1000</code></li>
-	<li><code>1 &lt;= sum(nums[i].length) &lt;= 1000</code></li>
-	<li><code>1 &lt;= nums[i][j] &lt;= 1000</code></li>
-	<li>All the values of <code>nums[i]</code> are <strong>unique</strong>.</li>
+<ul> 
+ <li><code>1 &lt;= nums.length &lt;= 1000</code></li> 
+ <li><code>1 &lt;= sum(nums[i].length) &lt;= 1000</code></li> 
+ <li><code>1 &lt;= nums[i][j] &lt;= 1000</code></li> 
+ <li>All the values of <code>nums[i]</code> are <strong>unique</strong>.</li> 
 </ul>
-<div><div>Related Topics</div><div><li>Array</li><li>Hash Table</li><li>Counting</li></div></div><br><div><li>👍 141</li><li>👎 10</li></div>
+
+<div><div>Related Topics</div><div><li>Array</li><li>Hash Table</li><li>Counting</li></div></div><br><div><li>👍 297</li><li>👎 17</li></div>

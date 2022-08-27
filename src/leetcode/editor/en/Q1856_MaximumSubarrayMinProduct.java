@@ -2,9 +2,9 @@ package leetcode.editor.en;
 
 import java.util.Stack;
 
-public class Q1856MaximumSubarrayMinProduct {
+public class Q1856_MaximumSubarrayMinProduct {
     public static void main(String[] args) {
-        Solution solution = new Q1856MaximumSubarrayMinProduct().new Solution();
+        Solution solution = new Q1856_MaximumSubarrayMinProduct().new Solution();
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)

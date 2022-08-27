@@ -3,9 +3,9 @@ package leetcode.editor.en;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Q691StickersToSpellWord {
+public class Q691_StickersToSpellWord {
     public static void main(String[] args) {
-        Solution solution = new Q691StickersToSpellWord().new Solution();
+        Solution solution = new Q691_StickersToSpellWord().new Solution();
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)

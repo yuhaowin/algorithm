@@ -1,8 +1,8 @@
 package leetcode.editor.en;
 
-public class Q687LongestUnivaluePath {
+public class Q687_LongestUnivaluePath {
     public static void main(String[] args) {
-        Solution solution = new Q687LongestUnivaluePath().new Solution();
+        Solution solution = new Q687_LongestUnivaluePath().new Solution();
         TreeNode head = new TreeNode(1, new TreeNode(4, new TreeNode(4), new TreeNode(4)),
                 new TreeNode(5, null, new TreeNode(5)));
         System.out.println(solution.longestUnivaluePath(head));

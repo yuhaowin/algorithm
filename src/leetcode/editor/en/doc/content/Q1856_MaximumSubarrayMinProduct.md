@@ -1,7 +1,7 @@
-<p>The <strong>min-product</strong> of an array is equal to the <strong>minimum value</strong> in the array <strong>multiplied by</strong> the array&#39;s <strong>sum</strong>.</p>
+<p>The <strong>min-product</strong> of an array is equal to the <strong>minimum value</strong> in the array <strong>multiplied by</strong> the array's <strong>sum</strong>.</p>
 
-<ul>
-	<li>For example, the array <code>[3,2,5]</code> (minimum value is <code>2</code>) has a min-product of <code>2 * (3+2+5) = 2 * 10 = 20</code>.</li>
+<ul> 
+ <li>For example, the array <code>[3,2,5]</code> (minimum value is <code>2</code>) has a min-product of <code>2 * (3+2+5) = 2 * 10 = 20</code>.</li> 
 </ul>
 
 <p>Given an array of integers <code>nums</code>, return <em>the <strong>maximum min-product</strong> of any <strong>non-empty subarray</strong> of </em><code>nums</code>. Since the answer may be large, return it <strong>modulo</strong> <code>10<sup>9</sup> + 7</code>.</p>
@@ -10,7 +10,7 @@
 
 <p>A <strong>subarray</strong> is a <strong>contiguous</strong> part of an array.</p>
 
-<p>&nbsp;</p>
+<p>&nbsp;</p> 
 <p><strong>Example 1:</strong></p>
 
 <pre>
@@ -38,11 +38,12 @@
 4 * (5+6+4) = 4 * 15 = 60.
 </pre>
 
-<p>&nbsp;</p>
+<p>&nbsp;</p> 
 <p><strong>Constraints:</strong></p>
 
-<ul>
-	<li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>
-	<li><code>1 &lt;= nums[i] &lt;= 10<sup>7</sup></code></li>
+<ul> 
+ <li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li> 
+ <li><code>1 &lt;= nums[i] &lt;= 10<sup>7</sup></code></li> 
 </ul>
-<div><div>Related Topics</div><div><li>Array</li><li>Stack</li><li>Monotonic Stack</li><li>Prefix Sum</li></div></div><br><div><li>👍 763</li><li>👎 44</li></div>
+
+<div><div>Related Topics</div><div><li>Array</li><li>Stack</li><li>Monotonic Stack</li><li>Prefix Sum</li></div></div><br><div><li>👍 955</li><li>👎 59</li></div>

@@ -5,9 +5,9 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Stack;
 
-public class Q496NextGreaterElementI {
+public class Q496_NextGreaterElementI {
     public static void main(String[] args) {
-        Solution solution = new Q496NextGreaterElementI().new Solution();
+        Solution solution = new Q496_NextGreaterElementI().new Solution();
         int[] num1 = new int[]{4, 1, 2};
         int[] num2 = new int[]{1, 3, 4, 2};
         Arrays.stream(solution.nextGreaterElement(num1, num2)).forEach(it -> System.out.print(it + " "));

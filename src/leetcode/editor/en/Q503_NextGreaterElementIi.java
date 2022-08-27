@@ -3,9 +3,9 @@ package leetcode.editor.en;
 import java.util.Arrays;
 import java.util.Stack;
 
-public class Q503NextGreaterElementIi {
+public class Q503_NextGreaterElementIi {
     public static void main(String[] args) {
-        Solution solution = new Q503NextGreaterElementIi().new Solution();
+        Solution solution = new Q503_NextGreaterElementIi().new Solution();
         int[] nums = new int[]{1, 2, 3, 4, 3};
         Arrays.stream(solution.nextGreaterElements(nums)).forEach(it -> System.out.print(it + " "));
     }

@@ -2,9 +2,9 @@ package leetcode.editor.en;
 
 import java.util.PriorityQueue;
 
-public class Q1094CarPooling {
+public class Q1094_CarPooling {
     public static void main(String[] args) {
-        Solution solution = new Q1094CarPooling().new Solution();
+        Solution solution = new Q1094_CarPooling().new Solution();
         int[][] trips = new int[][]{
                 {2, 1, 5},
                 {3, 3, 7}

@@ -1,11 +1,8 @@
 package leetcode.editor.en;
 
-public class Q669TrimABinarySearchTree {
+public class Q700_SearchInABinarySearchTree {
     public static void main(String[] args) {
-        Solution solution = new Q669TrimABinarySearchTree().new Solution();
-        TreeNode head = new TreeNode(1, new TreeNode(0), new TreeNode(2));
-        TreeNode result = solution.trimBST(head, 1, 2);
-        System.out.println();
+        Solution solution = new Q700_SearchInABinarySearchTree().new Solution();
     }
     //leetcode submit region begin(Prohibit modification and deletion)
 
@@ -25,28 +22,23 @@ public class Q669TrimABinarySearchTree {
      * }
      */
     class Solution {
-        public TreeNode trimBST(TreeNode root, int low, int high) {
+        public TreeNode searchBST(TreeNode root, int val) {
             if (root == null) {
+                return null;
+            }
+            if (root.val == val) {
                 return root;
             }
-            if (root.val < low) {
-                // 只会中一个
-                return trimBST(root.right, low, high);
+            if (val < root.val) {
+                return searchBST(root.left, val);
             } else {
-                root.right = trimBST(root.right, low, high);
+                return searchBST(root.right, val);
             }
-            if (root.val > high) {
-                // 只会中一个
-                return trimBST(root.left, low, high);
-            } else {
-                root.left = trimBST(root.left, low, high);
-            }
-            return root;
         }
     }
     //leetcode submit region end(Prohibit modification and deletion)
 
-    static class TreeNode {
+    public class TreeNode {
         int val;
         TreeNode left;
         TreeNode right;

@@ -2,9 +2,9 @@ package leetcode.editor.en;
 
 import java.util.*;
 
-public class Q2248IntersectionOfMultipleArrays {
+public class Q2248_IntersectionOfMultipleArrays {
     public static void main(String[] args) {
-        Solution solution = new Q2248IntersectionOfMultipleArrays().new Solution();
+        Solution solution = new Q2248_IntersectionOfMultipleArrays().new Solution();
         int[][] nums = new int[][]{
                 {3, 1, 2, 4, 5}
                 , {1, 2, 3, 4}

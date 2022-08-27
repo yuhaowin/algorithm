@@ -1,8 +1,8 @@
 package leetcode.editor.en;
 
-public class Q667BeautifulArrangementIi {
+public class Q667_BeautifulArrangementIi {
     public static void main(String[] args) {
-        Solution solution = new Q667BeautifulArrangementIi().new Solution();
+        Solution solution = new Q667_BeautifulArrangementIi().new Solution();
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)

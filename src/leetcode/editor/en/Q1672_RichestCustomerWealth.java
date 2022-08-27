@@ -3,9 +3,9 @@ package leetcode.editor.en;
 /**
  * 垃圾题
  */
-public class Q1672RichestCustomerWealth {
+public class Q1672_RichestCustomerWealth {
     public static void main(String[] args) {
-        Solution solution = new Q1672RichestCustomerWealth().new Solution();
+        Solution solution = new Q1672_RichestCustomerWealth().new Solution();
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)

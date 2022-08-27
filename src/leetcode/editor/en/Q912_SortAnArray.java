@@ -1,8 +1,8 @@
 package leetcode.editor.en;
 
-public class Q912SortAnArray {
+public class Q912_SortAnArray {
     public static void main(String[] args) {
-        Solution solution = new Q912SortAnArray().new Solution();
+        Solution solution = new Q912_SortAnArray().new Solution();
         int[] nums = new int[]{2, 3, 1, 6, 4, 7, 5, 0, 8, 3};
         solution.sortArray(nums);
         for (int num : nums) {

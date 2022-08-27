@@ -6,7 +6,7 @@
 
 <p>Return <em>an array </em><code>ans</code><em> of length </em><code>nums1.length</code><em> such that </em><code>ans[i]</code><em> is the <strong>next greater element</strong> as described above.</em></p>
 
-<p>&nbsp;</p>
+<p>&nbsp;</p> 
 <p><strong>Example 1:</strong></p>
 
 <pre>
@@ -28,15 +28,18 @@
 - 4 is underlined in nums2 = [1,2,3,<u>4</u>]. There is no next greater element, so the answer is -1.
 </pre>
 
-<p>&nbsp;</p>
+<p>&nbsp;</p> 
 <p><strong>Constraints:</strong></p>
 
-<ul>
-	<li><code>1 &lt;= nums1.length &lt;= nums2.length &lt;= 1000</code></li>
-	<li><code>0 &lt;= nums1[i], nums2[i] &lt;= 10<sup>4</sup></code></li>
-	<li>All integers in <code>nums1</code> and <code>nums2</code> are <strong>unique</strong>.</li>
-	<li>All the integers of <code>nums1</code> also appear in <code>nums2</code>.</li>
+<ul> 
+ <li><code>1 &lt;= nums1.length &lt;= nums2.length &lt;= 1000</code></li> 
+ <li><code>0 &lt;= nums1[i], nums2[i] &lt;= 10<sup>4</sup></code></li> 
+ <li>All integers in <code>nums1</code> and <code>nums2</code> are <strong>unique</strong>.</li> 
+ <li>All the integers of <code>nums1</code> also appear in <code>nums2</code>.</li> 
 </ul>
 
-<p>&nbsp;</p>
-<strong>Follow up:</strong> Could you find an <code>O(nums1.length + nums2.length)</code> solution?<div><div>Related Topics</div><div><li>Array</li><li>Hash Table</li><li>Stack</li><li>Monotonic Stack</li></div></div><br><div><li>👍 2710</li><li>👎 181</li></div>
+<p>&nbsp;</p> 
+<strong>Follow up:</strong> Could you find an 
+<code>O(nums1.length + nums2.length)</code> solution?
+
+<div><div>Related Topics</div><div><li>Array</li><li>Hash Table</li><li>Stack</li><li>Monotonic Stack</li></div></div><br><div><li>👍 4057</li><li>👎 255</li></div>

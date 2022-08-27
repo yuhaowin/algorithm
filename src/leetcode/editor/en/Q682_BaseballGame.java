@@ -1,8 +1,8 @@
 package leetcode.editor.en;
 
-public class Q682BaseballGame {
+public class Q682_BaseballGame {
     public static void main(String[] args) {
-        Solution solution = new Q682BaseballGame().new Solution();
+        Solution solution = new Q682_BaseballGame().new Solution();
         String[] ops = new String[]{"5", "2", "C", "D", "+"};
         System.out.println(solution.calPoints(ops));
         ops = new String[]{"5", "-2", "4", "C", "D", "9", "+", "+"};

@@ -6,35 +6,36 @@
 
 <p><strong>Note:</strong> In all test cases, all words were chosen randomly from the <code>1000</code> most common US English words, and <code>target</code> was chosen as a concatenation of two random words.</p>
 
-<p>&nbsp;</p>
+<p>&nbsp;</p> 
 <p><strong>Example 1:</strong></p>
 
 <pre>
-<strong>Input:</strong> stickers = [&quot;with&quot;,&quot;example&quot;,&quot;science&quot;], target = &quot;thehat&quot;
+<strong>Input:</strong> stickers = ["with","example","science"], target = "thehat"
 <strong>Output:</strong> 3
 <strong>Explanation:</strong>
-We can use 2 &quot;with&quot; stickers, and 1 &quot;example&quot; sticker.
-After cutting and rearrange the letters of those stickers, we can form the target &quot;thehat&quot;.
+We can use 2 "with" stickers, and 1 "example" sticker.
+After cutting and rearrange the letters of those stickers, we can form the target "thehat".
 Also, this is the minimum number of stickers necessary to form the target string.
 </pre>
 
 <p><strong>Example 2:</strong></p>
 
 <pre>
-<strong>Input:</strong> stickers = [&quot;notice&quot;,&quot;possible&quot;], target = &quot;basicbasic&quot;
+<strong>Input:</strong> stickers = ["notice","possible"], target = "basicbasic"
 <strong>Output:</strong> -1
 Explanation:
-We cannot form the target &quot;basicbasic&quot; from cutting letters from the given stickers.
+We cannot form the target "basicbasic" from cutting letters from the given stickers.
 </pre>
 
-<p>&nbsp;</p>
+<p>&nbsp;</p> 
 <p><strong>Constraints:</strong></p>
 
-<ul>
-	<li><code>n == stickers.length</code></li>
-	<li><code>1 &lt;= n &lt;= 50</code></li>
-	<li><code>1 &lt;= stickers[i].length &lt;= 10</code></li>
-	<li><code>1 &lt;= target.length &lt;= 15</code></li>
-	<li><code>stickers[i]</code> and <code>target</code> consist of lowercase English letters.</li>
+<ul> 
+ <li><code>n == stickers.length</code></li> 
+ <li><code>1 &lt;= n &lt;= 50</code></li> 
+ <li><code>1 &lt;= stickers[i].length &lt;= 10</code></li> 
+ <li><code>1 &lt;= target.length &lt;= 15</code></li> 
+ <li><code>stickers[i]</code> and <code>target</code> consist of lowercase English letters.</li> 
 </ul>
-<div><div>Related Topics</div><div><li>Dynamic Programming</li><li>Backtracking</li><li>Bit Manipulation</li><li>Bitmask</li></div></div><br><div><li>👍 710</li><li>👎 69</li></div>
+
+<div><div>Related Topics</div><div><li>Array</li><li>String</li><li>Dynamic Programming</li><li>Backtracking</li><li>Bit Manipulation</li><li>Bitmask</li></div></div><br><div><li>👍 860</li><li>👎 74</li></div>
