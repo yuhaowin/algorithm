@@ -1,6 +1,7 @@
 package class11.yuhao;
 
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Queue;
 
 /**
@@ -61,8 +62,8 @@ public class SerializeBinaryTree {
 
     //------------------------------------------------------------------------------------------------------------------
 
-    public Queue<Integer> levelSerial(Node head) {
-        Queue<Integer> result = new LinkedList<>();
+    public List<Integer> levelSerial(Node head) {
+        List<Integer> result = new LinkedList<>();
         if (head == null) {
             result.add(null);
             return result;
@@ -88,7 +89,11 @@ public class SerializeBinaryTree {
         return result;
     }
 
-    public Node buildLevelSerial(Queue<Integer> queue) {
+    public Node buildLevelSerial(List<Integer> list) {
+        Queue<Integer> queue = new LinkedList<>();
+        for (Integer item : list) {
+            queue.add(item);
+        }
         Integer val = queue.poll();
         if (val == null) {
             return null;
@@ -116,7 +121,6 @@ public class SerializeBinaryTree {
         }
         return new Node(val);
     }
-
 
     public boolean check(Node head1, Node head2) {
         if (head1 == null && head2 == null) {
